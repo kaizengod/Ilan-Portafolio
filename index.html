@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILAN IRAUSQUIN — Portafolio Profesional & Estrategia Digital</title>
+  <meta name="description" content="Licenciado en Desarrollo Empresarial. Estrategia de Negocios, Marketing Digital, Tecnología y Creatividad asistida por IA.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#F97316',
+              dark: '#0A0A0A',
+              card: '#121212',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0A0A0A;
+      color: #F0F0F0;
+    }
+    .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#0A0A0A] text-[#F0F0F0] font-sans selection:bg-[#F97316] selection:text-black antialiased">
+
+  <!-- ULTRA-TRANSPARENT NAVBAR -->
+  <!-- TOP NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/40 backdrop-blur-xl border-b border-white/10 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between relative">
+      
+      <!-- Brand Logo (Only ILAN on Left) -->
+      <a href="#hero" class="font-display font-black text-xl sm:text-2xl tracking-tighter text-white hover:text-[#F97316] transition-colors uppercase z-10">
+        ILAN
+      </a>
+
+      <!-- Dead-Centered Floating Nav Links -->
+      <nav class="absolute left-1/2 -translate-x-1/2 flex items-center gap-5 sm:gap-8 text-xs font-mono tracking-wider">
+        <a href="#work" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">PROYECTOS</a>
+        <a href="#methodology" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CÓMO PIENSO</a>
+        <a href="#creative" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CREATIVE WORK</a>
+        <a href="#about" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">SOBRE MÍ</a>
+        <a href="#contact" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CONTACTO</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT FLOW -->
+  <main>
+
+    <!-- SECTION 1: HERO WITH FULL PHOTO BACKGROUND -->
+    <section id="hero" class="relative pt-32 sm:pt-40 pb-20 border-b border-zinc-800 bg-[#0A0A0A] overflow-hidden">
+      
+      <!-- Full Section Scroll-Driven Animation Canvas Background -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <canvas id="hero-scroll-canvas" class="w-full h-full object-cover opacity-90 brightness-105 contrast-105"></canvas>
+        <!-- Soft Vignette Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/30 to-black/10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        
+        <!-- VERTICAL STACKED EDITORIAL BADGES ON THE LEFT -->
+        <div class="flex flex-col items-start gap-2.5 mb-8 max-w-md">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950/85 backdrop-blur-md border border-zinc-700 text-[11px] font-mono text-zinc-200 shadow-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+            <span>Lic. en Desarrollo Empresarial • UNEFM 2025</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950/85 backdrop-blur-md border border-zinc-700 text-[11px] font-mono text-zinc-200 shadow-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <span>Venezuela → Disponible para reubicación en Tijuana, México</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950/85 backdrop-blur-md border border-zinc-700 text-[11px] font-mono text-zinc-200 shadow-md">
+            <span>Español (Nativo) • Inglés (B2)</span>
+          </div>
+        </div>
+
+        <!-- Main Editorial Headline & Subtitle -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16">
+          <div class="lg:col-span-8 space-y-4">
+            <h1 class="text-[54px] sm:text-[88px] md:text-[104px] lg:text-[120px] leading-[0.88] tracking-tighter text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+              <span class="block font-display font-black uppercase tracking-tighter text-white">
+                ILAN
+              </span>
+              <span class="block font-serif font-normal italic tracking-tight text-zinc-100 -mt-1 sm:-mt-2 select-text">
+                Irausquin
+              </span>
+            </h1>
+
+            <p class="text-zinc-200 uppercase tracking-widest text-xs sm:text-sm font-semibold max-w-xl pt-2 font-mono drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+              ESTRATEGIA DE NEGOCIOS <span class="text-[#F97316]">×</span> MARKETING DIGITAL <span class="text-[#F97316]">×</span> TECNOLOGÍA <span class="text-[#F97316]">×</span> CREATIVIDAD
+            </p>
+          </div>
+
+          <div class="lg:col-span-4 space-y-6">
+            <!-- FLOATING CURSIVE SUPPORTING COPY (NO CARD CONTAINER) -->
+            <p class="font-serif italic text-zinc-100 font-light text-base sm:text-lg leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+              &ldquo;Construyo experiencias digitales, estrategias de marketing y soluciones de negocio que conectan la creatividad, la tecnología y los resultados medibles.&rdquo;
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a href="#work" class="px-6 py-3 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 flex items-center justify-center gap-2 group shadow-xl">
+                <span>EXPLORAR PROYECTOS</span>
+                <i data-lucide="arrow-down" class="w-3.5 h-3.5 group-hover:translate-y-0.5 transition-transform"></i>
+              </a>
+
+              <a href="#contact" class="px-6 py-3 rounded-full bg-zinc-950/90 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-700 font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md shadow-xl">
+                <i data-lucide="mail" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                <span>CONTACTAR</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE FRAMEWORK CARDS (PIENSO. CONSTRUYO. MIDO.) -->
+        <div class="pt-8 border-t border-zinc-800/80">
+          <div class="flex items-center justify-between mb-6">
+            <div class="text-[10px] uppercase tracking-[0.3em] text-zinc-300 font-mono drop-shadow">
+              El Marco de Trabajo
+            </div>
+            <span class="text-[10px] font-mono text-zinc-400 drop-shadow">HAZ CLIC EN CUALQUIER TARJETA</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            
+            <div id="concept-card-0" onclick="selectConcept(0)" class="p-5 rounded-2xl border border-zinc-800/80 bg-zinc-950/75 hover:border-zinc-700 backdrop-blur-md shadow-lg transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between mb-2">
+                <span id="concept-title-0" class="text-2xl sm:text-3xl font-display font-bold tracking-tight text-white transition-colors">PIENSO.</span>
+                <span class="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">01</span>
+              </div>
+              <span class="text-xs text-zinc-300 font-mono uppercase tracking-wider block mb-2 font-semibold">Investigación y Estrategia</span>
+              <p class="text-xs text-zinc-400 leading-relaxed font-light">Análisis de dinámicas competitivas, detección de demandas desatendidas y toma de decisiones comerciales fundamentadas.</p>
+            </div>
+
+            <div id="concept-card-1" onclick="selectConcept(1)" class="p-5 rounded-2xl border border-zinc-800/80 bg-zinc-950/75 hover:border-zinc-700 backdrop-blur-md shadow-lg transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between mb-2">
+                <span id="concept-title-1" class="text-2xl sm:text-3xl font-display font-bold tracking-tight text-white transition-colors">CONSTRUYO.</span>
+                <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">02</span>
+              </div>
+              <span class="text-xs text-zinc-300 font-mono uppercase tracking-wider block mb-2 font-semibold">Diseño y Tecnología</span>
+              <p class="text-xs text-zinc-400 leading-relaxed font-light">Desarrollo de interfaces web responsivas, aplicaciones digitales y sistemas de contenido con flujos acelerados por IA.</p>
+            </div>
+
+            <div id="concept-card-2" onclick="selectConcept(2)" class="p-5 rounded-2xl border border-zinc-600 ring-1 ring-[#F97316]/50 bg-zinc-950/90 backdrop-blur-md shadow-2xl scale-[1.02] transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between mb-2">
+                <span id="concept-title-2" class="text-2xl sm:text-3xl font-display font-bold tracking-tight text-[#F97316] transition-colors">MIDO.</span>
+                <span class="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">03</span>
+              </div>
+              <span class="text-xs text-zinc-300 font-mono uppercase tracking-wider block mb-2 font-semibold">Resultados y Datos</span>
+              <p class="text-xs text-zinc-400 leading-relaxed font-light">Monitoreo de métricas de interacción reales y comportamiento efectivo de usuarios.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTRODUCCIÓN / SOBRE MÍ WITH FONDO SOBRE MI.JPG -->
+    <section id="mini-about" class="py-14 sm:py-16 border-b border-zinc-800 bg-[#0A0A0A] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- CARD WITH FONDO SOBRE MI.JPG BACKGROUND -->
+        <div class="relative p-6 sm:p-10 rounded-3xl border border-zinc-800/80 overflow-hidden shadow-2xl group bg-zinc-950">
+          
+          <!-- Background Image -->
+          <img src="./fondo_sobre_mi.jpg" alt="Fondo Sobre Mí" class="absolute inset-0 w-full h-full object-cover object-center opacity-80 pointer-events-none transition-transform duration-700 group-hover:scale-105">
+
+          <!-- Dark Overlay for Readability -->
+          <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/85 pointer-events-none"></div>
+
+          <!-- Content Layer -->
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Column: Heading and Tag -->
+            <div class="lg:col-span-4 space-y-3">
+              <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] font-bold">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+                <span>INTRODUCCIÓN</span>
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-display font-black tracking-tight text-white uppercase drop-shadow-md">
+                SOBRE MÍ
+              </h2>
+              
+              <!-- Badges -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-mono text-zinc-200 tracking-wider uppercase shadow-md">
+                  <i data-lucide="compass" class="w-3 h-3 text-[#F97316]"></i>
+                  <span>DESARROLLO EMPRESARIAL</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-mono text-zinc-200 tracking-wider uppercase shadow-md">
+                  <i data-lucide="target" class="w-3 h-3 text-[#F97316]"></i>
+                  <span>MARKETING</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-mono text-zinc-200 tracking-wider uppercase shadow-md">
+                  <i data-lucide="line-chart" class="w-3 h-3 text-[#F97316]"></i>
+                  <span>ESTRATEGIA</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md border border-zinc-700/80 text-[10px] font-mono text-zinc-200 tracking-wider uppercase shadow-md">
+                  <i data-lucide="code-2" class="w-3 h-3 text-[#F97316]"></i>
+                  <span>WEB / PRODUCTO DIGITAL</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Column: Statement & Action -->
+            <div class="lg:col-span-8 space-y-5 lg:pl-6 lg:border-l lg:border-zinc-700/60">
+              <p class="text-base sm:text-lg text-zinc-100 font-light leading-relaxed drop-shadow">
+                &ldquo;Soy Ilan Irausquin, Licenciado en Desarrollo Empresarial, enfocado en la intersección entre estrategia, marketing digital y tecnología.&rdquo;
+              </p>
+              
+              <p class="text-sm sm:text-base text-zinc-400 font-light leading-relaxed drop-shadow">
+                Me interesa transformar problemas de negocio en soluciones digitales, combinando investigación, creatividad, tecnología y medición.
+              </p>
+
+              <div class="pt-2">
+                <a href="#about" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-950/90 hover:bg-[#F97316] text-zinc-200 hover:text-black border border-zinc-700 font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 group backdrop-blur-md shadow-xl">
+                  <span>CONOCER MÁS</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-[#F97316] group-hover:text-black group-hover:translate-x-1 transition-all"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROYECTOS DESTACADOS (HORIZONTAL CAROUSEL) -->
+    <section id="work" class="py-20 sm:py-28 bg-[#0A0A0A] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] mb-2 font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#F97316] animate-pulse"></span>
+              <span>PROYECTOS DESTACADOS</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-display font-black tracking-tighter text-white uppercase">
+              PROYECTOS
+            </h2>
+          </div>
+
+          <!-- Controls: Prev / Next Buttons & Counter -->
+          <div class="flex items-center gap-4">
+            <div class="text-xs font-mono text-zinc-400">
+              <span id="carousel-current-index" class="text-white font-bold text-sm">01</span>
+              <span class="text-zinc-600 mx-1">/</span>
+              <span>04</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button onclick="scrollCarousel(-1)" aria-label="Proyecto anterior" class="w-10 h-10 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 text-white flex items-center justify-center transition-all duration-200 focus:outline-none">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button onclick="scrollCarousel(1)" aria-label="Proyecto siguiente" class="w-10 h-10 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-zinc-500 text-white flex items-center justify-center transition-all duration-200 focus:outline-none">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions Hint -->
+        <div class="flex items-center justify-between text-[11px] font-mono text-zinc-500 mb-4 px-1">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+            <span>Desliza horizontalmente, arrastra con el ratón o usa las flechas</span>
+          </div>
+          <span class="hidden md:inline text-zinc-500">← Desliza para explorar →</span>
+        </div>
+
+        <!-- HORIZONTAL CAROUSEL CONTAINER -->
+        <div id="projects-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 pt-2 no-scrollbar focus:outline-none">
+
+          <!-- PROJECT 1: BODEGÓN RODRIGUES 2004 -->
+          <article id="project-card-0" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+            
+            <!-- Card Background Image (Detrás) -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+              <img src="./projects/bodegon/detras.JPG" alt="Bodegón Background" class="w-full h-full object-cover opacity-65 brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-950/65 to-zinc-950/30"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              
+              <!-- Visual Metrics & Front Image (Delante) -->
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
+                  
+                  <!-- Front Image (Delante) -->
+                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                    <img src="./projects/bodegon/delante.JPG" alt="Bodegón Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
+                  </div>
+
+                  <div class="p-4 sm:p-5 space-y-3">
+                    <div class="flex items-center justify-between border-b border-zinc-800/80 pb-2.5">
+                      <span class="text-xs font-mono text-[#F97316] uppercase tracking-wider font-bold flex items-center gap-1.5">
+                        <i data-lucide="trending-up" class="w-4 h-4"></i>
+                        <span>RESULTADOS DOCUMENTADOS</span>
+                      </span>
+                      <span class="text-[10px] font-mono text-zinc-400 uppercase">2024 - 2025</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 text-left">
+                      <div class="p-2.5 rounded-xl bg-black/80 border border-zinc-800">
+                        <div class="text-xl font-bold font-display text-white">2.527</div>
+                        <div class="text-[8px] font-mono text-zinc-400 uppercase tracking-widest mt-0.5">LIKES INSTAGRAM</div>
+                      </div>
+                      <div class="p-2.5 rounded-xl bg-black/80 border border-zinc-800">
+                        <div class="text-xl font-bold font-display text-[#F97316]">686</div>
+                        <div class="text-[8px] font-mono text-zinc-400 uppercase tracking-widest mt-0.5">COMPARTIDOS DIRECTOS</div>
+                      </div>
+                      <div class="p-2.5 rounded-xl bg-black/80 border border-zinc-800">
+                        <div class="text-xl font-bold font-display text-white">138</div>
+                        <div class="text-[8px] font-mono text-zinc-400 uppercase tracking-widest mt-0.5">COMENTARIOS</div>
+                      </div>
+                      <div class="p-2.5 rounded-xl bg-black/80 border border-zinc-800">
+                        <div class="text-xl font-bold font-display text-emerald-400">~$0.10</div>
+                        <div class="text-[8px] font-mono text-zinc-400 uppercase tracking-widest mt-0.5">COSTO / CONVERSACIÓN</div>
+                      </div>
+                    </div>
+
+                    <div class="text-[10px] font-mono text-zinc-500 pt-1 flex justify-between">
+                      <span>Estratega de Negocios</span>
+                      <span>Meta Ads</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Details -->
+              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-sm font-bold text-[#F97316]">01</span>
+                    <span class="w-1 h-1 rounded-full bg-zinc-700"></span>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">MARKETING</span>
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">ESTRATEGIA</span>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 px-2.5 py-0.5 rounded-full font-bold">
+                    <i data-lucide="check-circle" class="w-3 h-3"></i>
+                    <span>Resultados Documentados</span>
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                    Bodegón Rodrigues 2004
+                  </h3>
+                  <p class="mt-1 text-xs sm:text-sm font-mono text-zinc-400">
+                    Investigación de consumidor, expansión de espacio y campaña de contenido.
+                  </p>
+                </div>
+
+                <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
+                  Identificación de una demanda desatendida de consumo in-situ mediante investigación de consumidores, lo que impulsó la construcción física de un patio exterior y posteriormente una campaña audiovisual basada en la cultura interna de la comunidad.
+                </p>
+
+                <!-- VER CASO COMPLETO & INSTAGRAM REEL BUTTONS -->
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                  <button onclick="openCaseStudy(0)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md">
+                    <span>VER CASO COMPLETO</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                  </button>
+
+                  <a href="https://www.instagram.com/reel/DLtBdNBSp3b/?igsi=bWI0ZTVzNm5senhr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-white border border-zinc-700 font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md group/link">
+                    <i data-lucide="instagram" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                    <span>VER REEL DE CAMPAÑA</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-zinc-400 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 2: ABC POKER -->
+          <article id="project-card-1" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+            
+            <!-- Card Background Image (Detrás) -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+              <img src="./projects/abc/detras.png" alt="ABC Poker Background" class="w-full h-full object-cover opacity-65 brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-950/65 to-zinc-950/30"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              
+              <!-- Visual Architecture Graphic & Front Image (Delante) -->
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
+                  
+                  <!-- Front Image (Delante) -->
+                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                    <img src="./projects/abc/delante.png" alt="ABC Poker Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
+                  </div>
+
+                  <div class="p-4 sm:p-5 space-y-3">
+                    <div class="flex items-center justify-between border-b border-zinc-800/80 pb-2.5">
+                      <span class="text-xs font-mono text-zinc-300 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                        <i data-lucide="layers" class="w-4 h-4 text-[#F97316]"></i>
+                        <span>WEB OFICIAL & ONBOARDING</span>
+                      </span>
+                      <span class="text-[10px] font-mono text-zinc-400 uppercase">2026</span>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-black/80 border border-zinc-800 space-y-2">
+                      <div class="flex items-center justify-between text-xs font-mono text-zinc-300">
+                        <span>PLATAFORMA WEB OFICIAL</span>
+                        <span class="text-emerald-400 font-bold">DESARROLLADA</span>
+                      </div>
+                      <div class="flex items-center justify-between text-xs font-mono text-zinc-300">
+                        <span>SISTEMA VISUAL</span>
+                        <span class="text-emerald-400 font-bold">DESPLEGADO</span>
+                      </div>
+                      <div class="flex items-center justify-between text-xs font-mono text-zinc-300">
+                        <span>ESTRATEGIA DE ADQUISICIÓN</span>
+                        <span class="text-[#F97316] font-bold">PREPARADA</span>
+                      </div>
+                    </div>
+
+                    <div class="text-[10px] font-mono text-zinc-500 pt-1 flex justify-between">
+                      <span>Estratega Digital y Desarrollador Web</span>
+                      <span>Proactivo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Details -->
+              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-sm font-bold text-[#F97316]">02</span>
+                    <span class="w-1 h-1 rounded-full bg-zinc-700"></span>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">ESTRATEGIA</span>
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">WEB</span>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-mono text-[#F97316] bg-[#F97316]/10 border border-[#F97316]/30 px-2.5 py-0.5 rounded-full font-bold">
+                    <i data-lucide="clock" class="w-3 h-3"></i>
+                    <span>Presencia Web Oficial 2026</span>
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                    ABC Poker
+                  </h3>
+                  <p class="mt-1 text-xs sm:text-sm font-mono text-zinc-400">
+                    Desarrollo proactivo de la primera presencia web oficial, arquitectura digital y estrategia de adquisición.
+                  </p>
+                </div>
+
+                <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
+                  Desarrollo proactivo de la primera plataforma web oficial para ABC Poker —que previamente no contaba con página web—, optimizando la arquitectura de información, la comunicación visual y preparando el embudo de adquisición.
+                </p>
+
+                <!-- VER CASO COMPLETO & EXTERNAL LINK BUTTONS -->
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                  <button onclick="openCaseStudy(1)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md">
+                    <span>VER CASO COMPLETO</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                  </button>
+
+                  <a href="https://abcpokerclub.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-white border border-zinc-700 font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md group/link">
+                    <i data-lucide="globe" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                    <span>ABCPOKERCLUB.COM</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-zinc-400 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 3: DASHBOARD DE FINANZAS PERSONALES -->
+          <article id="project-card-2" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+            
+            <!-- Card Background Image (Detrás) -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+              <img src="./projects/dashboard/detras.png" alt="Dashboard Background" class="w-full h-full object-cover opacity-65 brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-950/65 to-zinc-950/30"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              
+              <!-- Tech Stack Graphic -->
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md p-6 space-y-4 shadow-xl">
+                  <div class="flex items-center justify-between border-b border-zinc-800/80 pb-3">
+                    <span class="text-xs font-mono text-zinc-300 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                      <i data-lucide="database" class="w-4 h-4 text-[#F97316]"></i>
+                      <span>MODELOS & CONTROL</span>
+                    </span>
+                    <span class="text-[10px] font-mono text-zinc-400 uppercase">2026</span>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-black/80 border border-zinc-800 space-y-2">
+                    <div class="flex flex-wrap gap-1.5">
+                      <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-200 border border-zinc-800">Antigravity IA</span>
+                      <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-200 border border-zinc-800">Supabase</span>
+                      <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-200 border border-zinc-800">PostgreSQL</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-light">
+                      Aplicación web responsiva diseñada para gestión financiera diaria y control de caja.
+                    </p>
+                  </div>
+
+                  <div class="text-[10px] font-mono text-zinc-500 flex justify-between">
+                    <span>Product Design & Development</span>
+                    <span>SaaS Web</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Details -->
+              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-sm font-bold text-[#F97316]">03</span>
+                    <span class="w-1 h-1 rounded-full bg-zinc-700"></span>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">PRODUCTO DIGITAL</span>
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">WEB</span>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-mono text-zinc-300 bg-zinc-900 border border-zinc-800 px-2.5 py-0.5 rounded-full">
+                    <i data-lucide="sparkles" class="w-3 h-3 text-[#F97316]"></i>
+                    <span>Producto Digital</span>
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                    FinTrack — Dashboard de Finanzas
+                  </h3>
+                  <p class="mt-1 text-xs sm:text-sm font-mono text-zinc-400">
+                    Aplicación web para gestión financiera diaria y reemplazo de hojas de cálculo.
+                  </p>
+                </div>
+
+                <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
+                  Construcción de una aplicación de finanzas personales diseñada para reemplazar hojas de cálculo tradicionales por una experiencia digital más accesible, persistente y sin fricción de registro.
+                </p>
+
+                <!-- VER CASO COMPLETO & FINTRACK LINK BUTTONS -->
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                  <button onclick="openCaseStudy(2)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md">
+                    <span>VER CASO COMPLETO</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                  </button>
+
+                  <a href="https://fintrack-nine-mu.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-white border border-zinc-700 font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md group/link">
+                    <i data-lucide="layout-dashboard" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                    <span>VISITAR FINTRACK EN VERCEL</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-zinc-400 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 4: TESIS PORTER -->
+          <article id="project-card-3" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+            
+            <!-- Card Background Image (Detrás) -->
+            <div class="absolute inset-0 z-0 pointer-events-none">
+              <img src="./tesis/detras.png" alt="Tesis Background" class="w-full h-full object-cover opacity-65 brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/95 via-zinc-950/65 to-zinc-950/30"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              
+              <!-- Visual Strategy Graphic & Front Image (Delante) -->
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
+                  
+                  <!-- Front Image (Delante: Logo Bodegón) -->
+                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                    <img src="./projects/bodegon/delante.JPG" alt="Bodegón Tesis Logo Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
+                  </div>
+
+                  <div class="p-4 sm:p-5 space-y-3">
+                    <div class="flex items-center justify-between border-b border-zinc-800/80 pb-2.5">
+                      <span class="text-xs font-mono text-[#F97316] uppercase tracking-wider font-bold flex items-center gap-1.5">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                        <span>5 FUERZAS DE PORTER</span>
+                      </span>
+                      <span class="text-[10px] font-mono text-zinc-400 uppercase">UNEFM 2025</span>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-black/80 border border-zinc-800 space-y-1 font-mono text-xs">
+                      <div class="text-zinc-200 font-bold uppercase text-xs">Diagnóstico Empresarial</div>
+                      <p class="text-xs text-zinc-300 font-sans font-light">
+                        Análisis de rivalidad del sector, poder de negociación y sustitutos aplicado a Bodegón Rodrigues.
+                      </p>
+                    </div>
+
+                    <div class="text-[10px] font-mono text-zinc-500 pt-1 flex justify-between">
+                      <span>Investigador Principal</span>
+                      <span>Tesis de Grado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Details -->
+              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-sm font-bold text-[#F97316]">04</span>
+                    <span class="w-1 h-1 rounded-full bg-zinc-700"></span>
+                    <div class="flex flex-wrap gap-1.5">
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">ESTRATEGIA</span>
+                      <span class="text-[10px] font-mono font-medium tracking-wider text-zinc-300 uppercase px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-800">INVESTIGACIÓN</span>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-mono text-zinc-300 bg-zinc-900 border border-zinc-800 px-2.5 py-0.5 rounded-full">
+                    <i data-lucide="sparkles" class="w-3 h-3 text-[#F97316]"></i>
+                    <span>Tesis de Grado UNEFM</span>
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                    Tesis: Estrategia de Negocios y Competitividad
+                  </h3>
+                  <p class="mt-1 text-xs sm:text-sm font-mono text-zinc-400">
+                    Análisis de dinámicas competitivas del comercio minorista mediante las 5 Fuerzas de Porter.
+                  </p>
+                </div>
+
+                <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
+                  Trabajo Especial de Grado basado en el análisis de las dinámicas competitivas del comercio minorista mediante las 5 Fuerzas de Porter, formulando estrategias gerenciales aplicadas a Bodegón Rodrigues 2004.
+                </p>
+
+                <!-- VER CASO COMPLETO & PDF DOWNLOAD BUTTONS -->
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                  <button onclick="openCaseStudy(3)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md">
+                    <span>VER CASO COMPLETO</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                  </button>
+
+                  <a href="./tesis/7. TEG Ilan y Andrea 1.pdf" download="Ilan_Irausquin_Tesis_UNEFM.pdf" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-white border border-zinc-700 font-mono text-xs font-bold tracking-wider uppercase transition-all duration-200 shadow-md group/link">
+                    <i data-lucide="download" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                    <span>DESCARGAR TESIS PDF</span>
+                    <i data-lucide="file-text" class="w-3.5 h-3.5 text-zinc-400 group-hover/link:translate-x-0.5 transition-transform"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Mini Tabs Project Selector -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+          <button onclick="scrollToProjectCard(0)" id="tab-btn-0" class="p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-900/95 border-[#F97316] shadow-lg">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-mono font-bold text-[#F97316]">01</span>
+              <span class="text-[9px] font-mono text-zinc-500">2024 - 2025</span>
+            </div>
+            <div class="text-xs font-display font-bold truncate text-white">Bodegón Rodrigues 2004</div>
+          </button>
+
+          <button onclick="scrollToProjectCard(1)" id="tab-btn-1" class="p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-950/60 border-zinc-800/80 hover:border-zinc-700">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-mono font-bold text-zinc-500">02</span>
+              <span class="text-[9px] font-mono text-zinc-500">2026</span>
+            </div>
+            <div class="text-xs font-display font-bold truncate text-zinc-400">ABC Poker</div>
+          </button>
+
+          <button onclick="scrollToProjectCard(2)" id="tab-btn-2" class="p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-950/60 border-zinc-800/80 hover:border-zinc-700">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-mono font-bold text-zinc-500">03</span>
+              <span class="text-[9px] font-mono text-zinc-500">2026</span>
+            </div>
+            <div class="text-xs font-display font-bold truncate text-zinc-400">FinTrack Dashboard</div>
+          </button>
+
+          <button onclick="scrollToProjectCard(3)" id="tab-btn-3" class="p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-950/60 border-zinc-800/80 hover:border-zinc-700">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-mono font-bold text-zinc-500">04</span>
+              <span class="text-[9px] font-mono text-zinc-500">2025</span>
+            </div>
+            <div class="text-xs font-display font-bold truncate text-zinc-400">Tesis 5 Fuerzas Porter</div>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: METODOLOGÍA & PENSAMIENTO ESTRATÉGICO (CÓMO PIENSO) -->
+    <section id="methodology" class="py-20 sm:py-28 bg-[#0A0A0A] relative overflow-hidden">
+      
+      <!-- Ambient Background Video -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <video 
+          id="method-bg-video"
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="w-full h-full object-cover opacity-85 brightness-105 contrast-110"
+        >
+          <source src="https://res.cloudinary.com/se3scrvv/video/upload/v1787347509/Silhouette_behind_red_frosted_glass_202608211724_ywtryv.mp4" type="video/mp4" />
+        </video>
+        <!-- Light Vignette Overlay for Crisp Text & Glowing Semicircle -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/70 via-transparent to-[#0A0A0A]/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/60 via-transparent to-[#0A0A0A]/60"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] mb-2 font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+              <span>METODOLOGÍA & PENSAMIENTO ESTRATÉGICO</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-display font-black tracking-tighter text-white uppercase">
+              CÓMO PIENSO
+            </h2>
+          </div>
+          <div class="text-left md:text-right">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block mb-1">
+              Flujo Iterativo de 5 Etapas
+            </span>
+            <span class="text-xs sm:text-sm font-mono text-zinc-300 font-semibold tracking-wider">
+              INVESTIGACIÓN → ESTRATEGIA → CONSTRUCCIÓN → MEDICIÓN → ITERACIÓN
+            </span>
+          </div>
+        </div>
+
+        <!-- Dynamic Semicircle Interactive Dial & Details Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Left Column: Interactive Semicircle Graphic (Floating on background) -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center p-2 sm:p-4 relative">
+            <div class="w-full flex items-center justify-between mb-2">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-500">
+                DIAL DE EJECUCIÓN
+              </span>
+              <div class="flex items-center gap-1">
+                <button onclick="prevMethodologyStep()" class="w-8 h-8 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 flex items-center justify-center transition-colors" aria-label="Anterior">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <button onclick="nextMethodologyStep()" class="w-8 h-8 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 flex items-center justify-center transition-colors" aria-label="Siguiente">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- SVG Semicircle Arc Container -->
+            <div class="relative w-full max-w-[340px] sm:max-w-[380px] aspect-[400/260] my-2 select-none">
+              <svg viewBox="0 0 400 240" class="w-full h-full overflow-visible">
+                <defs>
+                  <filter id="orange-glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Background Outer Semicircle Track -->
+                <path d="M 50 200 A 150 150 0 0 1 350 200" fill="none" stroke="#1f1f23" stroke-width="6" stroke-linecap="round" />
+                <path d="M 85 200 A 115 115 0 0 1 315 200" fill="none" stroke="#27272a" stroke-width="1" stroke-dasharray="4 4" />
+
+                <!-- Active Arc Path -->
+                <path id="svg-active-arc" d="M 50 200 A 150 150 0 0 1 50 200" fill="none" stroke="#F97316" stroke-width="6" stroke-linecap="round" filter="url(#orange-glow)" class="transition-all duration-500 ease-out" />
+
+                <!-- Connecting Radial Line -->
+                <line id="svg-radial-line" x1="200" y1="200" x2="50" y2="200" stroke="#F97316" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" class="transition-all duration-500 ease-out" />
+
+                <!-- Center Hub Indicator -->
+                <circle cx="200" cy="200" r="24" fill="#09090b" stroke="#27272a" stroke-width="2" />
+                <circle cx="200" cy="200" r="8" fill="#F97316" filter="url(#orange-glow)" />
+
+                <!-- Nodes -->
+                <!-- Node 0: 180deg (50, 200) -->
+                <g onclick="selectMethodologyStep(0)" class="cursor-pointer group">
+                  <circle cx="50" cy="200" r="26" fill="transparent" />
+                  <circle id="node-circle-0" cx="50" cy="200" r="14" fill="#F97316" stroke="#ffffff" stroke-width="2.5" class="transition-all duration-300 group-hover:stroke-[#F97316]" />
+                  <text id="node-text-0" x="50" y="203.5" text-anchor="middle" fill="#000000" font-size="10" font-family="monospace" font-weight="bold" class="pointer-events-none">01</text>
+                  <text id="node-label-0" x="50" y="224" text-anchor="middle" fill="#FFFFFF" font-size="9" font-family="monospace" letter-spacing="0.08em" font-weight="bold" class="pointer-events-none uppercase">INVESTIGACIÓN</text>
+                </g>
+
+                <!-- Node 1: 135deg (94, 94) -->
+                <g onclick="selectMethodologyStep(1)" class="cursor-pointer group">
+                  <circle cx="94" cy="94" r="26" fill="transparent" />
+                  <circle id="node-circle-1" cx="94" cy="94" r="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.5" class="transition-all duration-300 group-hover:stroke-[#F97316]" />
+                  <text id="node-text-1" x="94" y="97.5" text-anchor="middle" fill="#a1a1aa" font-size="8" font-family="monospace" font-weight="bold" class="pointer-events-none">02</text>
+                  <text id="node-label-1" x="94" y="76" text-anchor="middle" fill="#71717a" font-size="9" font-family="monospace" letter-spacing="0.08em" class="pointer-events-none uppercase">ESTRATEGIA</text>
+                </g>
+
+                <!-- Node 2: 90deg (200, 50) -->
+                <g onclick="selectMethodologyStep(2)" class="cursor-pointer group">
+                  <circle cx="200" cy="50" r="26" fill="transparent" />
+                  <circle id="node-circle-2" cx="200" cy="50" r="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.5" class="transition-all duration-300 group-hover:stroke-[#F97316]" />
+                  <text id="node-text-2" x="200" y="53.5" text-anchor="middle" fill="#a1a1aa" font-size="8" font-family="monospace" font-weight="bold" class="pointer-events-none">03</text>
+                  <text id="node-label-2" x="200" y="32" text-anchor="middle" fill="#71717a" font-size="9" font-family="monospace" letter-spacing="0.08em" class="pointer-events-none uppercase">CONSTRUCCIÓN</text>
+                </g>
+
+                <!-- Node 3: 45deg (306, 94) -->
+                <g onclick="selectMethodologyStep(3)" class="cursor-pointer group">
+                  <circle cx="306" cy="94" r="26" fill="transparent" />
+                  <circle id="node-circle-3" cx="306" cy="94" r="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.5" class="transition-all duration-300 group-hover:stroke-[#F97316]" />
+                  <text id="node-text-3" x="306" y="97.5" text-anchor="middle" fill="#a1a1aa" font-size="8" font-family="monospace" font-weight="bold" class="pointer-events-none">04</text>
+                  <text id="node-label-3" x="306" y="76" text-anchor="middle" fill="#71717a" font-size="9" font-family="monospace" letter-spacing="0.08em" class="pointer-events-none uppercase">MEDICIÓN</text>
+                </g>
+
+                <!-- Node 4: 0deg (350, 200) -->
+                <g onclick="selectMethodologyStep(4)" class="cursor-pointer group">
+                  <circle cx="350" cy="200" r="26" fill="transparent" />
+                  <circle id="node-circle-4" cx="350" cy="200" r="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.5" class="transition-all duration-300 group-hover:stroke-[#F97316]" />
+                  <text id="node-text-4" x="350" y="203.5" text-anchor="middle" fill="#a1a1aa" font-size="8" font-family="monospace" font-weight="bold" class="pointer-events-none">05</text>
+                  <text id="node-label-4" x="350" y="224" text-anchor="middle" fill="#71717a" font-size="9" font-family="monospace" letter-spacing="0.08em" class="pointer-events-none uppercase">ITERACIÓN</text>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Quick Access Pills -->
+            <div class="flex flex-wrap items-center justify-center gap-1.5 mt-4 w-full pt-4 border-t border-zinc-900">
+              <button onclick="selectMethodologyStep(0)" id="pill-step-0" class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-[#F97316] text-black font-bold shadow-md">01. INVESTIGACIÓN</button>
+              <button onclick="selectMethodologyStep(1)" id="pill-step-1" class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-zinc-900 text-zinc-400 hover:text-white">02. ESTRATEGIA</button>
+              <button onclick="selectMethodologyStep(2)" id="pill-step-2" class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-zinc-900 text-zinc-400 hover:text-white">03. CONSTRUCCIÓN</button>
+              <button onclick="selectMethodologyStep(3)" id="pill-step-3" class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-zinc-900 text-zinc-400 hover:text-white">04. MEDICIÓN</button>
+              <button onclick="selectMethodologyStep(4)" id="pill-step-4" class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-zinc-900 text-zinc-400 hover:text-white">05. ITERACIÓN</button>
+            </div>
+          </div>
+
+          <!-- Right Column: Active Stage Content (Floating on background) -->
+          <div class="lg:col-span-7">
+            <div id="methodology-card-content" class="p-2 sm:p-4 space-y-6">
+              <!-- Dynamically Populated by JavaScript -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: CREATIVE WORK (BEHANCE PORTFOLIO & VISUAL ASSETS) -->
+    <section id="creative" class="py-20 sm:py-28 border-b border-zinc-800 bg-[#0A0A0A] relative overflow-hidden">
+      
+      <!-- Section Background Image -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <img src="./background creative.jpg?v=2" alt="Background Creative" class="w-full h-full object-cover opacity-85 brightness-105 contrast-105" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/40 via-transparent to-[#0A0A0A]/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/40 via-transparent to-[#0A0A0A]/40"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] mb-2 font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+              <span>GALERÍA DE PROYECTOS & RECURSOS CREATIVOS</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-display font-black tracking-tighter text-white uppercase">
+              CREATIVE WORK
+            </h2>
+          </div>
+          <div class="text-left md:text-right">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block mb-1">
+              Colección Completa en Behance
+            </span>
+            <span class="text-xs sm:text-sm font-mono text-zinc-300 font-semibold tracking-wider">
+              16 PROYECTOS VISUALES
+            </span>
+          </div>
+        </div>
+
+        <!-- Trabajos Destacados Disclaimer Notice -->
+        <div class="mb-8 p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-between flex-wrap gap-3 text-xs text-zinc-300 font-mono shadow-md">
+          <div class="flex items-center gap-3">
+            <i data-lucide="sparkles" class="w-4 h-4 text-[#F97316] shrink-0"></i>
+            <span><strong>SELECCIÓN DE TRABAJOS DESTACADOS:</strong> Haz clic en cualquiera de las 5 carpetas o utiliza los filtros para explorar cada categoría.</span>
+          </div>
+          <span class="text-[10px] text-zinc-500 uppercase tracking-widest bg-black px-2.5 py-1 rounded border border-zinc-800">5 SECCIONES DISPONIBLES</span>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap items-center gap-2 mb-10">
+          <button onclick="filterCreativeCategory('ALL')" id="creative-pill-ALL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-white text-black font-bold shadow-md">TODAS LAS CARPETAS (5)</button>
+          <button onclick="filterCreativeCategory('VIDEO')" id="creative-pill-VIDEO" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">01. VIDEO & PROCESO</button>
+          <button onclick="filterCreativeCategory('BODEGON')" id="creative-pill-BODEGON" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">02. BODEGÓN RODRIGUES</button>
+          <button onclick="filterCreativeCategory('GASTRONOMIA')" id="creative-pill-GASTRONOMIA" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">03. GASTRONOMÍA & DELIVERY</button>
+          <button onclick="filterCreativeCategory('DIGITAL')" id="creative-pill-DIGITAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">04. DIGITAL & WEB</button>
+          <button onclick="filterCreativeCategory('POKER')" id="creative-pill-POKER" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">05. POKER & TORNEOS</button>
+          <button onclick="filterCreativeCategory('EXPERIMENTAL')" id="creative-pill-EXPERIMENTAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">3D BLENDER</button>
+        </div>
+
+        <!-- Square Cards Visual Gallery Grid -->
+        <div id="creative-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamically Rendered by JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: SOBRE MÍ (PERFIL PROFESIONAL, CREDENCIALES Y MATRIZ DE HABILIDADES) -->
+    <section id="about" class="py-20 sm:py-28 border-b border-zinc-800 bg-[#0A0A0A] relative overflow-hidden">
+      
+      <!-- Section Background Image -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <img src="./fondo sobre mi.jpg" alt="Fondo Sobre Mí" class="w-full h-full object-cover opacity-85 brightness-105 contrast-105" />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/40 via-transparent to-[#0A0A0A]/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/40 via-transparent to-[#0A0A0A]/40"></div>
+      </div>
+
+      <!-- Background ambient lighting -->
+      <div class="absolute top-1/4 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 left-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16 sm:space-y-20">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between pb-6 border-b border-zinc-800 gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] mb-2 font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#F97316] animate-pulse"></span>
+              <span>PERFIL PROFESIONAL & CREDENCIALES</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-display font-black tracking-tighter text-white uppercase">
+              SOBRE MÍ
+            </h2>
+          </div>
+          <div>
+            <a href="./tesis/7. TEG Ilan y Andrea 1.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-white/5 hover:shadow-[#F97316]/20">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>VER CURRÍCULUM (CV)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Narrative & Credentials Asymmetric Showcase -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Main Story & Philosophy (Floating layout with yo.png cutout behind text) -->
+          <div class="lg:col-span-7 space-y-6 relative">
+            <!-- Cutout PNG 'yo.png' Positioned Behind Text Towards the Left (Shifted Higher Up) -->
+            <div class="absolute -left-10 sm:-left-24 -top-32 sm:-top-44 -bottom-10 w-72 sm:w-[28rem] pointer-events-none z-0 opacity-65 overflow-visible">
+              <img src="./yo.png" alt="Ilan Irausquin" class="w-full h-full object-contain object-left-top filter brightness-110 contrast-105" />
+            </div>
+
+            <div class="relative z-10 space-y-6 pt-20 sm:pt-28">
+              <div class="inline-flex items-center gap-2 text-[11px] font-mono text-[#F97316] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 backdrop-blur-md">
+                <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+                <span>ILAN IRAUSQUIN — DESARROLLO EMPRESARIAL & TECH</span>
+              </div>
+
+              <h3 class="text-2xl sm:text-4xl font-display font-bold text-white leading-tight tracking-tight drop-shadow-md">
+                Profesional en <span class="font-serif italic font-normal text-white">Desarrollo Empresarial</span> orientado a <span class="font-serif italic font-normal text-white">estrategia</span>, marketing digital, investigación y construcción de <span class="font-serif italic font-normal text-white">soluciones</span> digitales.
+              </h3>
+              
+              <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-light drop-shadow">
+                Me interesa transformar problemas de negocio en soluciones digitales, combinando investigación empírica, creatividad publicitaria, tecnología moderna y analítica rigurosa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education, Languages & Location Badges -->
+          <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+            
+            <!-- Education Card -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4 hover:border-zinc-700 transition-colors shadow-lg">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] font-bold uppercase tracking-widest">
+                  <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                  <span>FORMACIÓN ACADÉMICA</span>
+                </div>
+                <span class="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-950/50 border border-emerald-800/60 px-2.5 py-0.5 rounded-full font-bold">
+                  <i data-lucide="award" class="w-3 h-3"></i>
+                  <span>Promedio: 17 / 20</span>
+                </span>
+              </div>
+
+              <div class="space-y-1.5">
+                <div class="font-display text-xl font-bold text-white tracking-tight">
+                  Licenciatura en Desarrollo Empresarial
+                </div>
+                <div class="text-xs font-mono text-zinc-300">
+                  Universidad Nacional Experimental Francisco de Miranda (UNEFM)
+                </div>
+                <div class="flex items-center justify-between text-xs font-mono text-zinc-400 pt-3 border-t border-zinc-800/80">
+                  <span>Graduación: <strong class="text-zinc-200">2025</strong></span>
+                  <span class="text-[#F97316]">Tesis de Grado Aplicada</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages Card with Fluency Bars -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-4 hover:border-zinc-700 transition-colors shadow-lg">
+              <div class="flex items-center gap-2 text-[10px] font-mono text-zinc-300 font-bold uppercase tracking-widest">
+                <i data-lucide="languages" class="w-4 h-4 text-[#F97316]"></i>
+                <span>IDIOMAS & COMUNICACIÓN</span>
+              </div>
+              
+              <div class="space-y-3">
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-1">
+                    <span class="text-white font-bold">Español</span>
+                    <span class="text-[#F97316] font-bold">Nativo (100%)</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-zinc-900 rounded-full overflow-hidden">
+                    <div class="w-full h-full bg-[#F97316] rounded-full"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-1">
+                    <span class="text-white font-bold">Inglés</span>
+                    <span class="text-indigo-400 font-bold">B2 / Intermedio-Avanzado (80%)</span>
+                  </div>
+                  <div class="w-full h-1.5 bg-zinc-900 rounded-full overflow-hidden">
+                    <div class="w-[80%] h-full bg-indigo-500 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location & Relocation Card -->
+            <div class="p-6 rounded-2xl bg-zinc-950 border border-zinc-800 space-y-2 hover:border-zinc-700 transition-colors shadow-lg">
+              <div class="flex items-center gap-2 text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                <span>UBICACIÓN & DISPONIBILIDAD</span>
+              </div>
+              <div class="space-y-1 text-xs font-mono">
+                <div class="text-zinc-300">
+                  Residencia actual: <span class="text-white font-bold">Venezuela</span>
+                </div>
+                <div class="text-emerald-400 font-semibold flex items-center gap-1.5 pt-1">
+                  <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                  <span>Disponible para reubicación en Tijuana, México / Remoto</span>
+                </div>
+                <p class="text-[11px] text-zinc-500 pt-0.5">
+                  Disponibilidad inmediata para roles de alto impacto y proyectos digitales.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Matriz de Habilidades (4 Grouped Skill Competencies) -->
+        <div id="skills-matrix-section" class="space-y-8 pt-6">
+          <div>
+            <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] uppercase tracking-[0.3em] mb-1 font-bold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#F97316]"></span>
+              <span>COMPETENCIAS PRINCIPALES</span>
+            </div>
+            <h3 class="text-3xl font-display font-bold text-white tracking-tight">
+              Matriz de Habilidades
+            </h3>
+            <p class="text-xs sm:text-sm font-mono text-zinc-400 max-w-2xl mt-1 font-light">
+              Pilares estratégicos y técnicos que estructuran mi metodología de trabajo.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Category 1: NEGOCIOS Y ESTRATEGIA -->
+            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+              <div class="space-y-3">
+                <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
+                  <i data-lucide="trending-up" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-base font-bold text-white tracking-tight">
+                    NEGOCIOS Y ESTRATEGIA
+                  </h4>
+                  <p class="text-[11px] font-mono text-zinc-500 mt-1">
+                    Pensamiento comercial y análisis
+                  </p>
+                </div>
+              </div>
+
+              <ul class="space-y-2 pt-3 border-t border-zinc-900/80">
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Estrategia de Negocios</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Investigación de Mercado</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Análisis Competitivo</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Desarrollo Empresarial</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Planificación de Proyectos</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Diagnóstico Empresarial</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>5 Fuerzas de Porter</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Viabilidad Comercial</span></li>
+              </ul>
+            </div>
+
+            <!-- Category 2: MARKETING DIGITAL -->
+            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+              <div class="space-y-3">
+                <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
+                  <i data-lucide="target" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-base font-bold text-white tracking-tight">
+                    MARKETING DIGITAL
+                  </h4>
+                  <p class="text-[11px] font-mono text-zinc-500 mt-1">
+                    Adquisición y embudos
+                  </p>
+                </div>
+              </div>
+
+              <ul class="space-y-2 pt-3 border-t border-zinc-900/80">
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Marketing Digital</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Estrategia Redes Sociales</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Meta Ads & Anuncios</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Estrategia de Contenidos</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Embudos de Conversión</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Interacción con Clientes</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Metricool y Programación</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>GA4 y Analítica Web</span></li>
+              </ul>
+            </div>
+
+            <!-- Category 3: TECNOLOGÍA E IA -->
+            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+              <div class="space-y-3">
+                <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-base font-bold text-white tracking-tight">
+                    TECNOLOGÍA E IA
+                  </h4>
+                  <p class="text-[11px] font-mono text-zinc-500 mt-1">
+                    Flujos asistidos por IA
+                  </p>
+                </div>
+              </div>
+
+              <ul class="space-y-2 pt-3 border-t border-zinc-900/80">
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>IA Generativa (Gemini/ChatGPT)</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Video IA (OpenAI Sora/Veo)</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Prototipado UI en Figma</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Gestión de Proyectos</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Modelado Datos en Excel</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Presentaciones Ejecutivas</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Automatización Digital</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Desarrollo Frontend Moderno</span></li>
+              </ul>
+            </div>
+
+            <!-- Category 4: CREATIVIDAD Y MEDIOS -->
+            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+              <div class="space-y-3">
+                <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-[#F97316]">
+                  <i data-lucide="palette" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-display text-base font-bold text-white tracking-tight">
+                    CREATIVIDAD Y MEDIOS
+                  </h4>
+                  <p class="text-[11px] font-mono text-zinc-500 mt-1">
+                    Identidad y dirección estética
+                  </p>
+                </div>
+              </div>
+
+              <ul class="space-y-2 pt-3 border-t border-zinc-900">
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Figma y Diseño de Interfaz</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Adobe Photoshop</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>DaVinci Resolve & Edición</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>CapCut & Formatos Cortos</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Video Generativo con IA</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Modelado 3D en Blender</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Affinity Suite</span></li>
+                <li class="flex items-center gap-2 text-xs font-mono text-zinc-300"><span class="w-1 h-1 rounded-full bg-[#F97316]"></span><span>Storytelling & Narrativa</span></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACTO & CALL TO ACTION (CONSTRUYAMOS ALGO) -->
+    <section id="contact" class="py-24 border-b border-zinc-800 bg-[#0A0A0A] relative overflow-hidden">
+      <!-- Background Ambient Glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F97316]/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <h2 class="text-3xl sm:text-5xl md:text-6xl font-display font-black text-white tracking-[0.15em] sm:tracking-[0.2em] uppercase leading-tight">
+            CONSTRUYAMOS ALGO.
+          </h2>
+
+          <p class="text-base sm:text-xl text-white font-serif italic leading-relaxed">
+            &ldquo;En busca de oportunidades donde converjan estrategia, marketing y tecnología.&rdquo;
+          </p>
+
+          <p class="text-xs sm:text-sm font-mono text-zinc-400 max-w-xl mx-auto font-light leading-relaxed">
+            Abierto a oportunidades en marketing digital, desarrollo de negocios, estrategia y proyectos digitales. Residente en Venezuela, con disponibilidad de reubicación a Tijuana, México o trabajo remoto.
+          </p>
+        </div>
+
+        <!-- Centered Email & Contact Container -->
+        <div class="max-w-xl mx-auto">
+          <div class="p-6 sm:p-8 rounded-2xl bg-zinc-950/80 backdrop-blur-md border border-zinc-800 space-y-6 shadow-2xl">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-bold">Correo Directo</span>
+              <span class="text-[10px] font-mono text-[#F97316] uppercase tracking-wider font-bold">Canal Principal</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/80 border border-zinc-800 flex items-center justify-between font-mono text-xs text-zinc-200">
+              <div class="flex items-center gap-2.5 truncate">
+                <i data-lucide="mail" class="w-4 h-4 text-[#F97316] shrink-0"></i>
+                <span class="truncate font-semibold">ilanelallan1106@gmail.com</span>
+              </div>
+              <button
+                id="contact-copy-email-btn"
+                onclick="copyContactEmail()"
+                class="px-3.5 py-1.5 rounded-full bg-zinc-900 hover:bg-zinc-800 text-[11px] font-mono text-zinc-300 flex items-center gap-1.5 shrink-0 ml-2 border border-zinc-700 transition-colors"
+              >
+                <i data-lucide="copy" class="w-3.5 h-3.5 text-[#F97316]"></i>
+                <span id="copy-btn-text">Copiar</span>
+              </button>
+            </div>
+
+            <p class="text-[11px] font-mono text-zinc-400 text-center leading-relaxed font-light">
+              Enlace directo para contacto de reclutadores, líderes de equipo o clientes.
+            </p>
+
+            <div class="pt-4 border-t border-zinc-900 flex items-center gap-3">
+              <a href="https://www.linkedin.com/in/ilan-irausquin-b083571b6/" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-2.5 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800 hover:border-blue-500/50 text-xs font-mono text-zinc-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://www.behance.net/ilanirausquin" target="_blank" rel="noopener noreferrer" class="flex-1 px-4 py-2.5 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800 hover:border-[#F97316]/50 text-xs font-mono text-zinc-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="external-link" class="w-4 h-4 text-[#F97316]"></i>
+                <span>Behance</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-black border-t border-zinc-800 text-zinc-400 py-16 font-mono text-xs relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Brand Col -->
+        <div class="md:col-span-5 space-y-3">
+          <span class="font-display text-2xl font-black tracking-tighter text-white block uppercase">
+            ILAN IRAUSQUIN
+          </span>
+          <p class="text-zinc-400 max-w-sm text-xs leading-relaxed font-light">
+            Estrategia de Negocios × Marketing Digital × Tecnología × Creatividad.
+          </p>
+          <div class="text-[#F97316] text-[10px] tracking-widest pt-1 font-bold">
+            INVESTIGACIÓN → ESTRATEGIA → CONSTRUCCIÓN → MEDICIÓN → ITERACIÓN
+          </div>
+        </div>
+
+        <!-- Nav Quick Links -->
+        <div class="md:col-span-3 space-y-2">
+          <span class="text-zinc-500 uppercase tracking-widest text-[10px] block font-bold">
+            Navegación
+          </span>
+          <ul class="space-y-1.5 text-zinc-400 text-xs">
+            <li>
+              <a href="#work" class="hover:text-[#F97316] transition-colors uppercase tracking-wider">01. Proyectos</a>
+            </li>
+            <li>
+              <a href="#methodology" class="hover:text-[#F97316] transition-colors uppercase tracking-wider">02. Cómo Pienso</a>
+            </li>
+            <li>
+              <a href="#creative" class="hover:text-[#F97316] transition-colors uppercase tracking-wider">03. Creative Work</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-[#F97316] transition-colors uppercase tracking-wider">04. Sobre Mí</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-[#F97316] transition-colors uppercase tracking-wider">05. Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Status & Relocation -->
+        <div class="md:col-span-4 space-y-3">
+          <span class="text-zinc-500 uppercase tracking-widest text-[10px] block font-bold">
+            Disponibilidad y Reubicación
+          </span>
+          <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-800 space-y-2">
+            <div class="flex items-center gap-2 text-emerald-400 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Disponible para Nuevos Roles y Proyectos</span>
+            </div>
+            <p class="text-zinc-400 text-[11px] leading-relaxed font-light">
+              Venezuela • Disponibilidad de reubicación a Tijuana, México o trabajo remoto.
+            </p>
+            <a
+              href="./tesis/7. TEG Ilan y Andrea 1.pdf"
+              target="_blank"
+              class="text-[#F97316] hover:underline inline-flex items-center gap-1 text-[11px] pt-1 uppercase tracking-wider font-bold"
+            >
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+              <span>Ver CV Completo →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-zinc-500 uppercase tracking-widest">
+        <div>
+          &copy; 2026 ILAN IRAUSQUIN. Portafolio Profesional.
+        </div>
+
+        <button
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          class="inline-flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors"
+        >
+          <span>VOLVER ARRIBA</span>
+          <i data-lucide="arrow-up" class="w-3.5 h-3.5 text-[#F97316]"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FULL CASE STUDY MODAL OVERLAY -->
+  <div id="case-study-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/90 backdrop-blur-xl flex justify-center p-2 sm:p-4 md:p-6 lg:p-8 animate-in fade-in duration-200">
+    <div class="relative w-full max-w-5xl bg-[#0A0A0A] border border-zinc-800 sm:rounded-2xl shadow-2xl overflow-hidden my-auto min-h-screen sm:min-h-0">
+      
+      <!-- Modal Top Navigation Bar -->
+      <div class="sticky top-0 z-30 flex items-center justify-between px-6 py-4 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-zinc-800">
+        <div class="flex items-center gap-3">
+          <button onclick="closeCaseStudy()" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-xs font-mono text-zinc-200 transition-colors uppercase tracking-wider">
+            <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+            <span>VOLVER AL PORTFOLIO</span>
+          </button>
+          <span class="hidden sm:inline-block text-xs font-mono text-zinc-600">/</span>
+          <span id="modal-project-counter" class="hidden sm:inline-block text-[10px] font-mono text-[#F97316] uppercase tracking-widest font-bold">
+            REGISTRO DE PROYECTO
+          </span>
+        </div>
+
+        <button onclick="closeCaseStudy()" class="p-2 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-white transition-colors" aria-label="Cerrar modal">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Dynamic Modal Content Body -->
+      <div id="modal-body-content" class="p-6 sm:p-10 md:p-12 space-y-10">
+        <!-- Content inserted dynamically by JS -->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    // ----------------------------------------------------
+    // HERO BACKGROUND SCROLL ANIMATION (Canvas Frame Sequence)
+    // ----------------------------------------------------
+    const TOTAL_HERO_FRAMES = 121;
+    const heroFrameImages = [];
+    const heroCanvas = document.getElementById('hero-scroll-canvas');
+    const heroCtx = heroCanvas ? heroCanvas.getContext('2d') : null;
+
+    let heroTargetFrame = 0;
+    let heroCurrentFrame = 0;
+    let heroAnimFrameId = null;
+
+    function getHeroFrameSrc(index) {
+      const frameNum = String(index + 1).padStart(3, '0');
+      return `./scroll animation/ezgif-frame-${frameNum}.jpg`;
+    }
+
+    function drawHeroFrame(img) {
+      if (!heroCtx || !heroCanvas || !img || !img.complete) return;
+
+      const cW = heroCanvas.width;
+      const cH = heroCanvas.height;
+      const iW = img.naturalWidth || img.width;
+      const iH = img.naturalHeight || img.height;
+      if (!iW || !iH) return;
+
+      // Cover scaling math with slight zoom out and downward vertical shift
+      const zoomFactor = 0.88;
+      const scale = Math.max(cW / iW, cH / iH) * zoomFactor;
+      const nw = iW * scale;
+      const nh = iH * scale;
+      const x = (cW - nw) / 2;
+      const yOffset = cH * 0.06 + 30; // Shift down
+      const y = (cH - nh) / 2 + yOffset;
+
+      heroCtx.clearRect(0, 0, cW, cH);
+      heroCtx.drawImage(img, x, y, nw, nh);
+    }
+
+    function resizeHeroCanvas() {
+      if (!heroCanvas) return;
+      const rect = heroCanvas.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      heroCanvas.width = rect.width * dpr;
+      heroCanvas.height = rect.height * dpr;
+
+      const activeIdx = Math.round(heroCurrentFrame);
+      if (heroFrameImages[activeIdx] && heroFrameImages[activeIdx].complete) {
+        drawHeroFrame(heroFrameImages[activeIdx]);
+      }
+    }
+
+    function renderHeroFrameLoop() {
+      const heroEl = document.getElementById('hero');
+      const miniAboutEl = document.getElementById('mini-about');
+      if (!heroEl) return;
+
+      const scrollY = window.scrollY;
+      const animStart = 0;
+      const animEnd = (miniAboutEl ? miniAboutEl.offsetTop + miniAboutEl.offsetHeight : heroEl.offsetHeight * 1.5);
+
+      let progress = (scrollY - animStart) / (animEnd - animStart);
+      progress = Math.max(0, Math.min(1, progress));
+
+      heroTargetFrame = progress * (TOTAL_HERO_FRAMES - 1);
+
+      // Momentum LERP for ultra-fluid movement
+      heroCurrentFrame += (heroTargetFrame - heroCurrentFrame) * 0.22;
+      const clampedIdx = Math.max(0, Math.min(Math.round(heroCurrentFrame), TOTAL_HERO_FRAMES - 1));
+
+      if (heroFrameImages[clampedIdx] && heroFrameImages[clampedIdx].complete) {
+        drawHeroFrame(heroFrameImages[clampedIdx]);
+      }
+
+      if (Math.abs(heroTargetFrame - heroCurrentFrame) > 0.01) {
+        heroAnimFrameId = requestAnimationFrame(renderHeroFrameLoop);
+      } else {
+        heroAnimFrameId = null;
+      }
+    }
+
+    function onHeroScroll() {
+      if (!heroAnimFrameId) {
+        heroAnimFrameId = requestAnimationFrame(renderHeroFrameLoop);
+      }
+    }
+
+    function initHeroScrollAnimation() {
+      if (!heroCanvas) return;
+      resizeHeroCanvas();
+
+      for (let i = 0; i < TOTAL_HERO_FRAMES; i++) {
+        const img = new Image();
+        img.src = getHeroFrameSrc(i);
+        img.onload = () => {
+          if (i === 0) drawHeroFrame(img);
+        };
+        heroFrameImages.push(img);
+      }
+
+      window.addEventListener('resize', resizeHeroCanvas, { passive: true });
+      window.addEventListener('scroll', onHeroScroll, { passive: true });
+    }
+
+    initHeroScrollAnimation();
+
+    // Concept Selection logic
+    function selectConcept(index) {
+      for (let i = 0; i < 3; i++) {
+        const card = document.getElementById('concept-card-' + i);
+        const title = document.getElementById('concept-title-' + i);
+        if (i === index) {
+          card.className = "p-5 rounded-2xl border border-zinc-600 ring-1 ring-[#F97316]/50 bg-zinc-950/90 backdrop-blur-md shadow-2xl scale-[1.02] transition-all duration-200 cursor-pointer";
+          title.className = "text-2xl sm:text-3xl font-display font-bold tracking-tight text-[#F97316] transition-colors";
+        } else {
+          card.className = "p-5 rounded-2xl border border-zinc-800/80 bg-zinc-950/75 hover:border-zinc-700 backdrop-blur-md shadow-lg transition-all duration-200 cursor-pointer";
+          title.className = "text-2xl sm:text-3xl font-display font-bold tracking-tight text-white transition-colors";
+        }
+      }
+    }
+
+    // Carousel Navigation
+    let currentProjectIdx = 0;
+    const totalProjectsCount = 4;
+
+    function scrollToProjectCard(idx) {
+      currentProjectIdx = idx;
+      const card = document.getElementById('project-card-' + idx);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+      updateTabHighlights();
+    }
+
+    function scrollCarousel(direction) {
+      currentProjectIdx = (currentProjectIdx + direction + totalProjectsCount) % totalProjectsCount;
+      scrollToProjectCard(currentProjectIdx);
+    }
+
+    function updateTabHighlights() {
+      document.getElementById('carousel-current-index').textContent = '0' + (currentProjectIdx + 1);
+      for (let i = 0; i < totalProjectsCount; i++) {
+        const tab = document.getElementById('tab-btn-' + i);
+        if (tab) {
+          const numSpan = tab.querySelector('span:first-child');
+          const titleDiv = tab.querySelector('.font-display');
+
+          if (i === currentProjectIdx) {
+            tab.className = "p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-900/95 border-[#F97316] shadow-lg";
+            if (numSpan) numSpan.className = "text-[10px] font-mono font-bold text-[#F97316]";
+            if (titleDiv) titleDiv.className = "text-xs font-display font-bold truncate text-white";
+          } else {
+            tab.className = "p-3.5 rounded-xl text-left transition-all duration-200 border bg-zinc-950/60 border-zinc-800/80 hover:border-zinc-700";
+            if (numSpan) numSpan.className = "text-[10px] font-mono font-bold text-zinc-500";
+            if (titleDiv) titleDiv.className = "text-xs font-display font-bold truncate text-zinc-400";
+          }
+        }
+      }
+    }
+
+    // Sync carousel scroll with mini tabs and counter dynamically
+    const carouselEl = document.getElementById('projects-carousel');
+    if (carouselEl) {
+      carouselEl.addEventListener('scroll', () => {
+        const containerWidth = carouselEl.clientWidth;
+        const scrollLeft = carouselEl.scrollLeft;
+        const centerPos = scrollLeft + containerWidth / 2;
+
+        let closestIdx = currentProjectIdx;
+        let minDiff = Infinity;
+
+        for (let i = 0; i < totalProjectsCount; i++) {
+          const card = document.getElementById('project-card-' + i);
+          if (card) {
+            const cardLeft = card.getBoundingClientRect().left - carouselEl.getBoundingClientRect().left + carouselEl.scrollLeft;
+            const cardCenter = cardLeft + card.offsetWidth / 2;
+            const diff = Math.abs(cardCenter - centerPos);
+            if (diff < minDiff) {
+              minDiff = diff;
+              closestIdx = i;
+            }
+          }
+        }
+
+        if (currentProjectIdx !== closestIdx) {
+          currentProjectIdx = closestIdx;
+          updateTabHighlights();
+        }
+      }, { passive: true });
+    }
+
+    // CASE STUDY MODAL DATA & FUNCTIONS
+    const projectCaseStudiesData = [
+      {
+        id: 'bodegon-rodrigues-2004',
+        title: 'Bodegón Rodrigues 2004',
+        subtitle: 'Investigación de consumidor, expansión de espacio y campaña de contenido.',
+        role: 'Estratega de Negocios y Productor Creativo',
+        year: '2024 - 2025',
+        coverImage: './projects/bodegon/delante.JPG',
+        websiteUrl: 'https://www.instagram.com/reel/DLtBdNBSp3b/?igsi=bWI0ZTVzNm5senhr',
+        tagline: 'Identificación de una demanda desatendida de consumo in-situ mediante investigación de consumidores, lo que impulsó la construcción física de un patio exterior y posteriormente una campaña audiovisual basada en la cultura interna de la comunidad.',
+        challenge: 'Bodegón Rodrigues 2004 contaba con un flujo comercial constante, pero carecía de datos estructurados sobre cómo los clientes percibían la marca y si buscaban experiencias de consumo social en el establecimiento. El negocio requería validación empírica antes de invertir capital en ampliaciones físicas y pauta publicitaria.',
+        approach: 'Realicé una investigación de mercado cuantitativa y cualitativa con clientes activos. Los datos demostraron una demanda desatendida de consumo in-situ: un porcentaje sustancial deseaba un ambiente cómodo para consumir en el local en lugar de comprar únicamente para llevar.',
+        build: 'Con base en la evidencia de la investigación, la dirección aprobó la inversión para construir un patio social exterior. Posterior a la obra física, produje una campaña audiovisual adaptada a los códigos de la audiencia local, aprovechando el humor y la cultura comunitaria.',
+        creative: 'Guionicé, grabé y edité piezas de video dinámicas en formato corto destacando el nuevo ambiente. Se priorizó la autenticidad y el humor local sobre los formatos publicitarios rígidos para detonar recomendaciones directas.',
+        resultsTitle: 'RESULTADOS DOCUMENTADOS',
+        metrics: [
+          { val: '2.527', label: 'Likes Instagram', sub: 'Interacción documentada' },
+          { val: '686', label: 'Compartidos Directos', sub: 'Shares por mensajería' },
+          { val: '138', label: 'Comentarios', sub: 'Conversaciones activas' },
+          { val: '~$0.10', label: 'Costo / Conversación', sub: 'Eficiencia en Meta Ads' }
+        ],
+        resultsList: [
+          '2.527 Likes en Instagram alcanzados con alta tasa de interacción local.',
+          '686 compartidos directos por mensajería: el indicador más claro de recomendación persona a persona.',
+          '138 comentarios de clientes habituales y nuevos prospectos.',
+          'Costo promedio de ~$0.10 por conversación de mensajería directa iniciada mediante Meta Ads segmentados.',
+          'Ocupación y uso continuo del nuevo patio exterior tras el lanzamiento.'
+        ],
+        learnings: [
+          'Investigación antes de construcción: Las inversiones en infraestructura física tienen éxito cuando nacen de una demanda de consumidor demostrada.',
+          'Cultura local vs. Publicidad tradicional: El humor genuino y los códigos comunitarios multiplican los compartidos directos sin inflar el presupuesto.',
+          'Eficiencia en mensajería: Campañas creativas bien enfocadas logran costos de ~$0.10 por conversación.'
+        ]
+      },
+      {
+        id: 'abc-poker',
+        title: 'ABC Poker',
+        subtitle: 'Desarrollo proactivo de la primera presencia web oficial, arquitectura digital y estrategia de adquisición.',
+        role: 'Estratega Digital y Desarrollador Web',
+        year: '2026',
+        coverImage: './projects/abc/delante.png',
+        websiteUrl: 'https://abcpokerclub.com',
+        tagline: 'Desarrollo proactivo de la primera plataforma web oficial para ABC Poker —que previamente no contaba con página web—, optimizando la arquitectura de información, la comunicación visual y preparando el embudo de adquisición.',
+        challenge: 'ABC Poker no contaba con página web ni presencia digital previa. De manera proactiva, identifiqué la oportunidad y construí su primera plataforma web oficial desde cero para comunicar con claridad las reglas del club, modalidades de juego, calendarios de torneos y eliminar la fricción al incorporar nuevos jugadores.',
+        approach: 'Realicé una auditoría del recorrido del usuario y estructuré la arquitectura de información desde cero. Diseñé una experiencia web optimizada para navegación móvil, con mensajes directos sobre seguridad, transparencia y soporte en vivo.',
+        build: 'Desarrollé la interfaz web completa con tiempos de carga rápidos y llamados a la acción directos. Diseñé un sistema de plantillas gráficas para anuncios de torneos diarios y contenido para redes sociales.',
+        creative: 'Creé flyers de torneos, banners y recursos visuales de alto contraste que elevan la percepción de la comunidad a un estándar profesional y competitivo.',
+        resultsTitle: 'FASE DE ADQUISICIÓN PLANIFICADA',
+        metrics: null,
+        resultsList: [
+          'Presencia Web Oficial: Desarrollada y desplegada desde cero para navegación en dispositivos móviles y de escritorio.',
+          'Sistema Visual: Desplegado con plantillas modulares para anuncios diarios y promociones.',
+          'Campaña de Rendimiento (Siguiente Fase): Embudo planificado estructurado (Anuncio → Web → CTA Club → WhatsApp → Miembro Activo).',
+          'Infraestructura de medición preparada con eventos de Pixel, GA4 y taxonomía UTM.'
+        ],
+        learnings: [
+          'Iniciativa proactiva: Construir soluciones antes de que el cliente las pida formalmente abre nuevas vías de negocio inmediatas.',
+          'Claridad antes de conversión: Una arquitectura web limpia es el prerrequisito necesario antes de destinar presupuesto publicitario.',
+          'Señales de confianza: En comunidades de juego online, la transparencia en reglas y soporte es el factor decisivo.'
+        ]
+      },
+      {
+        id: 'personal-finance-dashboard',
+        title: 'FinTrack — Dashboard de Finanzas Personales',
+        subtitle: 'Aplicación web para gestión financiera diaria y reemplazo de hojas de cálculo.',
+        role: 'Product Design & Development',
+        year: '2026',
+        coverImage: './projects/dashboard/detras.png',
+        websiteUrl: 'https://fintrack-nine-mu.vercel.app',
+        tagline: 'Construcción de una aplicación de finanzas personales diseñada para reemplazar hojas de cálculo tradicionales por una experiencia digital más accesible, persistente y sin fricción.',
+        challenge: 'Las hojas de cálculo tradicionales son incómodas y lentas para registrar gastos diarios desde el teléfono móvil, lo que genera abandono del hábito financiero. Las aplicaciones comerciales suelen imponer suscripciones o publicidad intrusiva.',
+        approach: 'Diseñé una solución web ligera enfocada en velocidad de carga, registro de transacciones en pocos toques y visualización clara de ingresos, gastos y ahorro.',
+        build: 'Construí la aplicación utilizando Antigravity para desarrollo asistido por IA, Supabase para autenticación multiusuario y base de datos relacional PostgreSQL, y GitHub para control de versiones.',
+        creative: 'Diseñé una interfaz sobria en modo oscuro con gráficos limpios, barras de presupuesto y modales de registro directo sin pantallas intermedias innecesarias.',
+        resultsTitle: 'DESPLIEGUE Y USO REAL',
+        metrics: null,
+        resultsList: [
+          'Aplicación web completamente operativa y disponible en navegadores móviles y de escritorio.',
+          'Autenticación y partición de datos independiente para cada usuario en Supabase PostgreSQL.',
+          'Uso continuo por parte de un círculo personal para el control mensual de ingresos y egresos.',
+          'Demostración de capacidad para identificar un problema, diseñar la solución y poner el producto digital en producción.'
+        ],
+        learnings: [
+          'Fricción mínima: Reducir los pasos para registrar una transacción es la clave para mantener la constancia.',
+          'Aceleración con IA: Herramientas como Antigravity permiten pasar de la idea a una aplicación con base de datos en tiempos reducidos.',
+          'Enfoque en lo esencial: Una herramienta enfocada que resuelve un problema concreto resulta más efectiva que plataformas sobrecargadas.'
+        ]
+      },
+      {
+        id: 'thesis-business-strategy',
+        title: 'Tesis: Estrategia de Negocios y Competitividad',
+        subtitle: 'Análisis de dinámicas competitivas del comercio minorista mediante las 5 Fuerzas de Porter.',
+        role: 'Investigador Principal',
+        year: '2025',
+        coverImage: './projects/bodegon/delante.JPG',
+        pdfUrl: './tesis/7. TEG Ilan y Andrea 1.pdf',
+        tagline: 'Trabajo Especial de Grado basado en el análisis de las dinámicas competitivas del comercio minorista mediante las 5 Fuerzas de Porter, formulando estrategias gerenciales aplicadas a Bodegón Rodrigues 2004.',
+        challenge: 'Las pequeñas y medianas empresas comerciales a menudo operan por intuición sin marcos de análisis competitivo estructurados, lo que las deja vulnerables ante cambios en el comportamiento del consumidor y la rivalidad del sector.',
+        approach: 'Desarrollé un diagnóstico empresarial integral aplicando el modelo de las Cinco Fuerzas de Michael Porter, adaptado a las características y realidades del comercio minorista local.',
+        build: 'Integré la investigación teórica con datos empíricos de campo, estructurando recomendaciones estratégicas en diferenciación de servicio, fidelización de clientes y optimización de espacios comerciales.',
+        creative: null,
+        resultsTitle: 'APLICACIÓN Y CONCLUSIONES',
+        metrics: null,
+        resultsList: [
+          'Evaluación exhaustiva de las 5 Fuerzas: Rivalidad en la industria, Poder de compradores, Poder de proveedores, Amenaza de sustitutos y Nuevos entrantes.',
+          'Los hallazgos de campo sobre preferencias de los clientes fundamentaron la decisión de ampliar el patio exterior de Bodegón Rodrigues 2004.',
+          'Demostración de cómo los marcos de estrategia empresarial académica se traducen en decisiones de negocio prácticas.'
+        ],
+        learnings: [
+          'Estrategia aplicada: Los marcos de análisis estratégico cobran valor cuando se conectan con decisiones operativas reales.',
+          'Diferenciación vs. Precio: En retail, competir por experiencia y comunidad ofrece mayor sostenibilidad que competir exclusivamente por precio.',
+          'Rigor en la toma de decisiones: El diagnóstico estructurado proporciona certeza antes de comprometer recursos.'
+        ]
+      }
+    ];
+
+    function openCaseStudy(idx) {
+      const p = projectCaseStudiesData[idx];
+      if (!p) return;
+
+      const modal = document.getElementById('case-study-modal');
+      const container = document.getElementById('modal-body-content');
+      document.getElementById('modal-project-counter').textContent = `REGISTRO DE PROYECTO 0${idx + 1} / 04`;
+
+      let metricsHTML = '';
+      if (p.metrics) {
+        metricsHTML = `
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
+            ${p.metrics.map(m => `
+              <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-800">
+                <div class="text-3xl font-display font-black text-[#F97316]">${m.val}</div>
+                <div class="text-xs font-mono font-bold text-white uppercase mt-1">${m.label}</div>
+                <div class="text-[10px] font-mono text-zinc-500 mt-0.5">${m.sub}</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+
+      let resultsListHTML = p.resultsList.map(item => `
+        <div class="flex items-start gap-3">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-[#F97316] shrink-0 mt-1"></i>
+          <p class="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">${item}</p>
+        </div>
+      `).join('');
+
+      let learningsHTML = p.learnings.map((l, i) => `
+        <div class="p-5 rounded-xl bg-zinc-950 border border-zinc-800 space-y-2">
+          <div class="flex items-center gap-2 text-[10px] font-mono text-[#F97316] font-bold uppercase tracking-wider">
+            <i data-lucide="lightbulb" class="w-3.5 h-3.5"></i>
+            <span>APRENDIZAJE 0${i + 1}</span>
+          </div>
+          <p class="text-xs sm:text-sm text-zinc-300 font-light leading-relaxed">${l}</p>
+        </div>
+      `).join('');
+
+      let coverHTML = p.coverImage ? `
+        <div class="relative h-56 sm:h-72 w-full rounded-2xl overflow-hidden border border-zinc-800 mb-6 shadow-2xl">
+          <img src="${p.coverImage}" alt="${p.title}" class="w-full h-full object-cover object-top">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
+        </div>
+      ` : '';
+
+      container.innerHTML = `
+        ${coverHTML}
+        <div class="space-y-4 pb-6 border-b border-zinc-800">
+          <span class="text-[10px] font-mono font-bold tracking-widest text-[#F97316] bg-[#F97316]/10 border border-[#F97316]/30 px-3 py-1 rounded-full uppercase">
+            CASO DE ESTUDIO COMPLETO
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-display font-black text-white tracking-tight uppercase">${p.title}</h1>
+          <p class="text-base sm:text-lg font-mono text-[#F97316]">${p.subtitle}</p>
+          <p class="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">${p.tagline}</p>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-zinc-950 border border-zinc-800 font-mono text-xs mt-4">
+            <div><span class="text-[10px] text-zinc-500 block uppercase">ROL</span><span class="text-zinc-200 font-medium">${p.role}</span></div>
+            <div><span class="text-[10px] text-zinc-500 block uppercase">CRONOLOGÍA</span><span class="text-zinc-200 font-medium">${p.year}</span></div>
+            <div><span class="text-[10px] text-zinc-500 block uppercase">METODOLOGÍA</span><span class="text-zinc-200 font-medium">Investigación → Estrategia</span></div>
+            <div><span class="text-[10px] text-zinc-500 block uppercase">ENTREGABLE</span><span class="text-zinc-200 font-medium">Caso Documentado</span></div>
+          </div>
+
+          ${p.websiteUrl ? `
+          <div class="pt-2">
+            <a href="${p.websiteUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#F97316] hover:bg-[#e0630d] text-black font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-lg">
+              <i data-lucide="${p.websiteUrl.includes('instagram.com') ? 'instagram' : 'globe'}" class="w-4 h-4"></i>
+              <span>${p.websiteUrl.includes('instagram.com') ? 'VER REEL DE CAMPAÑA EN INSTAGRAM' : 'VISITAR SITIO WEB EN VIVO (' + p.websiteUrl.replace('https://', '') + ')'}</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+          ` : ''}
+
+          ${p.pdfUrl ? `
+          <div class="pt-2">
+            <a href="${p.pdfUrl}" download="Ilan_Irausquin_Tesis_UNEFM.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#F97316] hover:bg-[#e0630d] text-black font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-lg">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>DESCARGAR TESIS COMPLETA EN PDF</span>
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+          ` : ''}
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">01</span><span>EL DESAFÍO</span></div>
+          <div class="p-6 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-zinc-300 font-light leading-relaxed">${p.challenge}</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">02</span><span>ENFOQUE E INVESTIGACIÓN</span></div>
+          <div class="p-6 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-zinc-300 font-light leading-relaxed">${p.approach}</div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">03</span><span>CONSTRUCCIÓN Y EJECUCIÓN</span></div>
+          <div class="p-6 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-zinc-300 font-light leading-relaxed">${p.build}</div>
+        </div>
+
+        ${p.creative ? `
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">04</span><span>PRODUCCIÓN CREATIVA Y CONTENIDO</span></div>
+          <div class="p-6 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-zinc-300 font-light leading-relaxed">${p.creative}</div>
+        </div>
+        ` : ''}
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">05</span><span>${p.resultsTitle}</span></div>
+          ${metricsHTML}
+          <div class="p-6 rounded-xl bg-zinc-950 border border-zinc-800 space-y-3">${resultsListHTML}</div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 text-xs font-mono text-[#F97316] font-bold uppercase"><span class="bg-[#F97316]/10 px-2 py-0.5 rounded">06</span><span>APRENDIZAJES Y CONCLUSIONES</span></div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">${learningsHTML}</div>
+        </div>
+
+        <div class="pt-6 border-t border-zinc-800 flex justify-end">
+          <button onclick="closeCaseStudy()" class="px-6 py-3 rounded-full bg-white hover:bg-[#F97316] text-black font-mono text-xs font-bold uppercase">VOLVER A PROYECTOS</button>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeCaseStudy() {
+      const modal = document.getElementById('case-study-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCaseStudy();
+    });
+
+    // CÓMO PIENSO (METHODOLOGY DIAL CONTROLLER)
+    const methodologySteps = [
+      {
+        number: '01',
+        name: 'INVESTIGACIÓN',
+        icon: 'compass',
+        tagline: 'Comprender el problema con datos reales.',
+        description: 'Analizar las dinámicas de mercado, consultar el comportamiento de los consumidores, auditar los canales existentes y obtener insights empíricos antes de comprometer capital o diseño.',
+        outputs: ['Encuestas de consumidor', 'Auditorías de competencia', 'Perfilado de audiencias', 'Validación de datos'],
+        example: 'Identificación de demanda de consumo in-situ en Bodegón Rodrigues 2004.',
+        relatedProject: 'Bodegón Rodrigues 2004',
+        relatedProjectIdx: 0,
+        buttonLabel: 'Ver Caso de Bodegón 2004'
+      },
+      {
+        number: '02',
+        name: 'ESTRATEGIA',
+        icon: 'target',
+        tagline: 'Definir la dirección y el modelo de negocio.',
+        description: 'Sintetizar la investigación en una decisión de negocio coherente, ángulo de posicionamiento, arquitectura de embudo de conversión y priorización de acciones.',
+        outputs: ['Propuesta de valor', 'Mapeo de embudos', 'Estrategia de posicionamiento', 'Definición de KPIs'],
+        example: 'Análisis de 5 Fuerzas de Porter aplicado a la competitividad en comercio minorista.',
+        relatedProject: 'Tesis de Grado',
+        relatedProjectIdx: 3,
+        buttonLabel: 'Ver Caso de Tesis de Grado'
+      },
+      {
+        number: '03',
+        name: 'CONSTRUCCIÓN',
+        icon: 'hammer',
+        tagline: 'Crear soluciones digitales y activos de conversión.',
+        description: 'Ejecutar la estrategia mediante puntos de contacto modernos, plataformas web oficiales, piezas creativas de alto impacto y flujos asistidos por tecnología.',
+        outputs: ['Desarrollo web', 'Campañas visuales', 'Productos digitales', 'Copywriting y medios'],
+        example: 'Desarrollo proactivo de la primera web oficial y sistema gráfico para ABC Poker.',
+        relatedProject: 'ABC Poker',
+        relatedProjectIdx: 1,
+        buttonLabel: 'Ver Caso de ABC Poker'
+      },
+      {
+        number: '04',
+        name: 'MEDICIÓN',
+        icon: 'bar-chart-3',
+        tagline: 'Medir el impacto y retorno con rigor.',
+        description: 'Implementar analítica rigurosa (Meta Pixel, GA4, taxonomía UTM, monitoreo de conversaciones) para evaluar el desempeño con datos reales y verificables.',
+        outputs: ['Seguimiento de conversiones', 'Métricas de interacción', 'Costo por conversación', 'Reportes analíticos'],
+        example: 'Registro de 2.527 likes, 686 compartidos internos y ~$0.10 costo/conversación en Bodegón Rodrigues.',
+        relatedProject: 'Bodegón Rodrigues 2004',
+        relatedProjectIdx: 0,
+        buttonLabel: 'Ver Caso de Bodegón 2004'
+      },
+      {
+        number: '05',
+        name: 'ITERACIÓN',
+        icon: 'refresh-cw',
+        tagline: 'Mejorar con base en evidencia empírica.',
+        description: 'Revisar la evidencia empírica, eliminar puntos de fricción, potenciar los ganchos más efectivos y perfeccionar continuamente la experiencia de producto y negocio.',
+        outputs: ['Optimización de embudos', 'Pruebas de interfaz', 'Mejoras de producto', 'Ajustes estratégicos'],
+        example: 'Refinamiento continuo de la interfaz y experiencia de usuario del Dashboard de Finanzas.',
+        relatedProject: 'FinTrack Dashboard',
+        relatedProjectIdx: 2,
+        buttonLabel: 'Ver Caso de FinTrack'
+      }
+    ];
+
+    let currentMethodologyIdx = 0;
+
+    const nodeCoords = [
+      { x: 50, y: 200 },
+      { x: 94, y: 94 },
+      { x: 200, y: 50 },
+      { x: 306, y: 94 },
+      { x: 350, y: 200 }
+    ];
+
+    function selectMethodologyStep(idx) {
+      currentMethodologyIdx = idx;
+      renderMethodologyStep(idx);
+    }
+
+    function prevMethodologyStep() {
+      currentMethodologyIdx = (currentMethodologyIdx - 1 + methodologySteps.length) % methodologySteps.length;
+      renderMethodologyStep(currentMethodologyIdx);
+    }
+
+    function nextMethodologyStep() {
+      currentMethodologyIdx = (currentMethodologyIdx + 1) % methodologySteps.length;
+      renderMethodologyStep(currentMethodologyIdx);
+    }
+
+    function renderMethodologyStep(idx) {
+      const step = methodologySteps[idx];
+      const coord = nodeCoords[idx];
+
+      const activeArc = document.getElementById('svg-active-arc');
+      const radialLine = document.getElementById('svg-radial-line');
+      if (activeArc) {
+        activeArc.setAttribute('d', `M 50 200 A 150 150 0 0 1 ${coord.x} ${coord.y}`);
+      }
+      if (radialLine) {
+        radialLine.setAttribute('x2', coord.x);
+        radialLine.setAttribute('y2', coord.y);
+      }
+
+      for (let i = 0; i < 5; i++) {
+        const circle = document.getElementById(`node-circle-${i}`);
+        const text = document.getElementById(`node-text-${i}`);
+        const label = document.getElementById(`node-label-${i}`);
+        const pill = document.getElementById(`pill-step-${i}`);
+
+        if (i === idx) {
+          if (circle) {
+            circle.setAttribute('r', '14');
+            circle.setAttribute('fill', '#F97316');
+            circle.setAttribute('stroke', '#ffffff');
+            circle.setAttribute('stroke-width', '2.5');
+          }
+          if (text) {
+            text.setAttribute('fill', '#000000');
+            text.setAttribute('font-size', '10');
+          }
+          if (label) {
+            label.setAttribute('fill', '#FFFFFF');
+            label.setAttribute('font-weight', 'bold');
+          }
+          if (pill) {
+            pill.className = 'px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-[#F97316] text-black font-bold shadow-md';
+          }
+        } else {
+          if (circle) {
+            circle.setAttribute('r', '10');
+            circle.setAttribute('fill', '#18181b');
+            circle.setAttribute('stroke', '#3f3f46');
+            circle.setAttribute('stroke-width', '1.5');
+          }
+          if (text) {
+            text.setAttribute('fill', '#a1a1aa');
+            text.setAttribute('font-size', '8');
+          }
+          if (label) {
+            label.setAttribute('fill', '#71717a');
+            label.setAttribute('font-weight', 'normal');
+          }
+          if (pill) {
+            pill.className = 'px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider transition-all bg-zinc-900 text-zinc-400 hover:text-white';
+          }
+        }
+      }
+
+      const card = document.getElementById('methodology-card-content');
+      if (card) {
+        card.innerHTML = `
+          <div class="flex items-center justify-between flex-wrap gap-3 pb-4 border-b border-zinc-800">
+            <div class="flex items-center gap-3">
+              <div class="p-3 rounded-xl bg-[#F97316]/10 border border-[#F97316]/30 text-[#F97316]">
+                <i data-lucide="${step.icon}" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-mono text-[#F97316] uppercase tracking-[0.25em] font-bold">
+                  FASE ${step.number}
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+                  ${step.name}
+                </h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono">
+              ${step.tagline}
+            </span>
+          </div>
+
+          <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-light">
+            ${step.description}
+          </p>
+
+          <div>
+            <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block mb-2.5">
+              Entregables y Activos Producidos:
+            </span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              ${step.outputs.map(out => `
+                <div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800/90 text-xs font-mono text-zinc-300">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-[#F97316] shrink-0"></i>
+                  <span>${out}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          </div>
+        `;
+
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      }
+    }
+
+    // Initialize Methodology Step 0 on load
+    renderMethodologyStep(0);
+
+    // Force play ambient video on load
+    const methodVid = document.getElementById('method-bg-video');
+    if (methodVid) {
+      methodVid.muted = true;
+      methodVid.play().catch(() => {});
+    }
+
+    // CREATIVE WORK BEHANCE GALLERY DATA & CONTROLLER
+    const creativeGalleryData = [
+      {
+        id: 'behance-workflow-video',
+        behanceId: '244386935',
+        title: 'Video Mostrando Cómo Trabajo — Proceso',
+        category: 'VIDEO',
+        catLabel: 'VIDEO & PROCESO',
+        year: '2026',
+        tools: ['DaVinci Resolve', 'CapCut', 'Premiere'],
+        url: 'https://www.behance.net/gallery/244386935/Marketing-video',
+        description: 'Demostración audiovisual de mi metodología de trabajo, producción de contenido y desarrollo de campañas digitales.'
+      },
+      {
+        id: 'bodegon-publicidad-creativa',
+        behanceId: '220471579',
+        title: 'Bodegón Rodrigues — Publicidad Creativa',
+        category: 'BODEGON',
+        catLabel: 'BODEGÓN',
+        year: '2024',
+        tools: ['Photoshop', 'Illustrator', 'Meta Ads'],
+        url: 'https://www.behance.net/gallery/220471579/Publicidad-creativa',
+        description: 'Piezas publicitarias de alto impacto visual orientadas a la conversión y captación de clientes en redes sociales.'
+      },
+      {
+        id: 'bodegon-clean',
+        behanceId: '243725873',
+        title: 'Bodegón Rodrigues — Campaña Clean',
+        category: 'BODEGON',
+        catLabel: 'BODEGÓN',
+        year: '2024',
+        tools: ['Photoshop', 'Figma'],
+        url: 'https://www.behance.net/gallery/243725873/Clean',
+        description: 'Línea gráfica minimalista y limpia enfocada en resaltar la calidad de los productos y la experiencia en el local.'
+      },
+      {
+        id: 'bodegon-carnaval',
+        behanceId: '243726007',
+        title: 'Bodegón Rodrigues — Especial Carnaval',
+        category: 'BODEGON',
+        catLabel: 'BODEGÓN',
+        year: '2025',
+        tools: ['Photoshop', 'Illustrator'],
+        url: 'https://www.behance.net/gallery/243726007/Carnaval',
+        description: 'Campaña temática estacional con colores vibrantes y mensajes festivos para eventos de comunidad.'
+      },
+      {
+        id: 'mega-hamburguesa',
+        behanceId: '243725623',
+        title: 'Mega Hamburguesa — Banner Gastronómico',
+        category: 'GASTRONOMIA',
+        catLabel: 'GASTRONOMÍA',
+        year: '2024',
+        tools: ['Photoshop', 'Lightroom'],
+        url: 'https://www.behance.net/gallery/243725623/MEGA-HAMBURGUESA',
+        description: 'Retoque fotográfico y composición gráfica hiperrealista para marcas de comida rápida.'
+      },
+      {
+        id: 'burger-delivery',
+        behanceId: '243725753',
+        title: 'Burger Delivery — Campaña Pedidos',
+        category: 'GASTRONOMIA',
+        catLabel: 'GASTRONOMÍA',
+        year: '2024',
+        tools: ['Photoshop', 'Figma'],
+        url: 'https://www.behance.net/gallery/243725753/burger-delivery',
+        description: 'Diseño para promociones en plataformas de delivery y llamados a la acción de pedido por WhatsApp.'
+      },
+      {
+        id: 'pizza-promo',
+        behanceId: '243725795',
+        title: 'Pizza Promo — Publicidad Digital',
+        category: 'GASTRONOMIA',
+        catLabel: 'GASTRONOMÍA',
+        year: '2024',
+        tools: ['Photoshop'],
+        url: 'https://www.behance.net/gallery/243725795/pizza',
+        description: 'Diseño publicitario enfocado en promociones de fin de semana e interacción en stories de Instagram.'
+      },
+      {
+        id: 'chicken-burger',
+        behanceId: '243725687',
+        title: 'Chicken Burger — Pieza Comercial',
+        category: 'GASTRONOMIA',
+        catLabel: 'GASTRONOMÍA',
+        year: '2024',
+        tools: ['Photoshop', 'Illustrator'],
+        url: 'https://www.behance.net/gallery/243725687/chicken-burger',
+        description: 'Composición gráfica comercial de alto contraste para lanzamientos de nuevos productos gastronómicos.'
+      },
+      {
+        id: 'delivery-express',
+        behanceId: '243725945',
+        title: 'Delivery Express — Servicios Despacho',
+        category: 'GASTRONOMIA',
+        catLabel: 'GASTRONOMÍA',
+        year: '2024',
+        tools: ['Photoshop', 'Figma'],
+        url: 'https://www.behance.net/gallery/243725945/Delivery',
+        description: 'Flyer promocional para servicios de despacho a domicilio con enfoque en velocidad y cobertura.'
+      },
+      {
+        id: 'web-abc-ui',
+        behanceId: '254635167',
+        title: 'Web ABC Poker — UI & Prototipo',
+        category: 'DIGITAL',
+        catLabel: 'DIGITAL & WEB',
+        year: '2026',
+        tools: ['Figma', 'Photoshop', 'Web'],
+        url: 'https://www.behance.net/gallery/254635167/web-abc',
+        description: 'Diseño de interfaz y arquitectura visual para la primera plataforma web oficial del club de poker.'
+      },
+      {
+        id: 'dashboard-fintrack-ui',
+        behanceId: '254635371',
+        title: 'FinTrack — Personal Finance UI',
+        category: 'DIGITAL',
+        catLabel: 'DIGITAL & WEB',
+        year: '2026',
+        tools: ['Figma', 'Antigravity', 'React'],
+        url: 'https://www.behance.net/gallery/254635371/dashboard',
+        description: 'Diseño UI/UX en modo oscuro para aplicación de finanzas personales, gestión de presupuestos y control de caja.'
+      },
+      {
+        id: 'poker-pro-samurai',
+        behanceId: '254634531',
+        title: 'Pro Samurai — Tournament Banner',
+        category: 'POKER',
+        catLabel: 'POKER',
+        year: '2025',
+        tools: ['Photoshop', 'Illustrator'],
+        url: 'https://www.behance.net/gallery/254634531/pro-samurai',
+        description: 'Arte promocional con temática Samurai para torneos estelares de poker con altos pozos garantizados.'
+      },
+      {
+        id: 'poker-vip',
+        behanceId: '254634627',
+        title: 'Poker VIP — Pase Membresía Exclusiva',
+        category: 'POKER',
+        catLabel: 'POKER',
+        year: '2025',
+        tools: ['Photoshop', 'Figma'],
+        url: 'https://www.behance.net/gallery/254634627/poker-vip',
+        description: 'Diseño de identidad visual para jugadores de nivel VIP, beneficios exclusivos y eventos privados.'
+      },
+      {
+        id: 'poker-abc-sunday',
+        behanceId: '254634701',
+        title: 'ABC Sunday — Torneo Dominical',
+        category: 'POKER',
+        catLabel: 'POKER',
+        year: '2025',
+        tools: ['Photoshop'],
+        url: 'https://www.behance.net/gallery/254634701/abc-Sunday',
+        description: 'Flyer para el evento dominical insignia con estructuración clara de ciegas, buy-in y garantizados.'
+      },
+      {
+        id: 'poker-1k-happy-hour',
+        behanceId: '254634801',
+        title: '1K Happy Hour — Promoción Mesas',
+        category: 'POKER',
+        catLabel: 'POKER',
+        year: '2025',
+        tools: ['Photoshop', 'Figma'],
+        url: 'https://www.behance.net/gallery/254634801/1k-happy-hour',
+        description: 'Gráfica publicitaria para promociones de horas felices y bonificaciones diarias de fichas.'
+      },
+      {
+        id: '3d-blender-publicidad',
+        behanceId: '243994665',
+        title: '3D Publicidad & Render Blender',
+        category: 'EXPERIMENTAL',
+        catLabel: '3D & BLENDER',
+        year: '2024',
+        tools: ['Blender', 'Cycles', 'Photoshop'],
+        url: 'https://www.behance.net/gallery/243994665/3d-Publicidad',
+        description: 'Exploración tridimensional de materiales, iluminación volumétrica y renders de empaque para publicidad.'
+      }
+    ];
+
+    // CREATIVE WORK FOLDERS DATA (5 Main Sections)
+    const creativeFoldersData = [
+      {
+        catId: 'VIDEO',
+        title: '01. Video & Proceso de Trabajo',
+        subtitle: 'DEMOSTRACIÓN AUDIOVISUAL & MARKETING',
+        count: '1 PROYECTO',
+        icon: 'video',
+        description: 'Demostración de metodología de trabajo, guiones, producción audiovisual y desarrollo de campañas digitales.',
+        color: 'from-[#F97316]/20 via-zinc-950 to-black'
+      },
+      {
+        catId: 'BODEGON',
+        title: '02. Bodegón Rodrigues 2004',
+        subtitle: 'PUBLICIDAD CREATIVA & TEMÁTICA',
+        count: '3 PROYECTOS',
+        icon: 'store',
+        description: 'Publicidad de conversión, línea minimalista clean y campañas especiales estacionales para consumo local.',
+        color: 'from-amber-950/30 via-zinc-950 to-black'
+      },
+      {
+        catId: 'GASTRONOMIA',
+        title: '03. Gastronomía & Delivery',
+        subtitle: 'COMIDA RÁPIDA & ENVÍOS EXPRESS',
+        count: '5 PROYECTOS',
+        icon: 'utensils',
+        description: 'Banners comerciales e identidad promocional para marcas de hamburguesas, pizzas y despacho a domicilio.',
+        color: 'from-red-950/30 via-zinc-950 to-black'
+      },
+      {
+        catId: 'DIGITAL',
+        title: '04. Digital & Web / Dashboards',
+        subtitle: 'ARQUITECTURA DE INTERFAZ & PROTOTIPOS',
+        count: '2 PROYECTOS',
+        icon: 'globe',
+        description: 'Plataforma Web Oficial ABC Poker y diseño UI/UX del SaaS FinTrack Dashboard de finanzas.',
+        color: 'from-emerald-950/30 via-zinc-950 to-black'
+      },
+      {
+        catId: 'POKER',
+        title: '05. Poker & Torneos (Flyers & VIP)',
+        subtitle: 'CAMPEONATOS & MEMBRESÍAS EXCLUSIVAS',
+        count: '4 PROYECTOS',
+        icon: 'layers',
+        description: 'Artes temáticos Samurai, pases de miembros VIP, torneos dominicales y promociones para mesas de juego.',
+        color: 'from-purple-950/30 via-zinc-950 to-black'
+      }
+    ];
+
+    let currentCreativeFilter = 'ALL';
+
+    function filterCreativeCategory(cat) {
+      currentCreativeFilter = cat;
+      renderCreativeGrid(cat);
+    }
+
+    function renderCreativeGrid(cat) {
+      const grid = document.getElementById('creative-grid');
+      if (!grid) return;
+
+      const categories = ['ALL', 'VIDEO', 'BODEGON', 'GASTRONOMIA', 'DIGITAL', 'POKER', 'EXPERIMENTAL'];
+      categories.forEach(c => {
+        const pill = document.getElementById(`creative-pill-${c}`);
+        if (pill) {
+          if (c === cat) {
+            pill.className = 'px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-white text-black font-bold shadow-md';
+          } else {
+            pill.className = 'px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800';
+          }
+        }
+      });
+
+      // If 'ALL' view -> render the 5 Collection Folder Cards
+      if (cat === 'ALL') {
+        grid.innerHTML = creativeFoldersData.map(folder => `
+          <div onclick="filterCreativeCategory('${folder.catId}')" class="group cursor-pointer rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-[#F97316] p-6 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-2xl space-y-5 bg-gradient-to-br ${folder.color}">
+            
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-xl bg-black/90 border border-zinc-800 text-[#F97316] flex items-center justify-center shadow-md group-hover:bg-[#F97316] group-hover:text-black transition-colors">
+                <i data-lucide="${folder.icon}" class="w-6 h-6"></i>
+              </div>
+              <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-300 bg-black/90 px-3 py-1 rounded-full border border-zinc-800 uppercase shadow-sm">
+                ${folder.count}
+              </span>
+            </div>
+
+            <div>
+              <span class="text-[10px] font-mono text-[#F97316] font-bold tracking-widest uppercase block mb-1">${folder.subtitle}</span>
+              <h3 class="text-xl font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
+                ${folder.title}
+              </h3>
+              <p class="text-xs text-zinc-400 font-light mt-2.5 leading-relaxed">
+                ${folder.description}
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-zinc-900/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-zinc-300 font-bold uppercase tracking-wider group-hover:text-[#F97316] transition-colors flex items-center gap-2">
+                <span>ABRIR CARPETA DE TRABAJO</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-[#F97316] group-hover:translate-x-1 transition-transform"></i>
+              </span>
+            </div>
+
+          </div>
+        `).join('');
+      } else {
+        // Filtered view -> render project cards with live Behance embeds + back button
+        const filtered = creativeGalleryData.filter(item => item.category === cat);
+        
+        grid.innerHTML = `
+          <div class="col-span-full mb-2 flex items-center justify-between flex-wrap gap-3">
+            <button onclick="filterCreativeCategory('ALL')" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 hover:bg-[#F97316] text-zinc-300 hover:text-black font-mono text-xs font-bold uppercase transition-all border border-zinc-800">
+              <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+              <span>VOLVER A LAS 5 CARPETAS</span>
+            </button>
+            <span class="text-xs font-mono text-zinc-400">Mostrando ${filtered.length} proyectos de esta carpeta</span>
+          </div>
+
+          ${filtered.map(item => `
+            <div class="group rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-[#F97316]/60 overflow-hidden transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-2xl">
+              
+              <!-- Live Official Behance Preview Embed Container -->
+              <div class="relative w-full aspect-[4/3] overflow-hidden bg-black border-b border-zinc-800/80">
+                <iframe 
+                  src="https://www.behance.net/embed/project/${item.behanceId}?ilo0=1" 
+                  class="w-full h-full border-0 pointer-events-auto" 
+                  allowfullscreen 
+                  lazyload 
+                  frameborder="0" 
+                  allow="clipboard-write" 
+                  refererPolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+
+              <!-- Description & Action Button -->
+              <div class="p-4 space-y-3.5 bg-zinc-950 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1.5">
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-[#F97316] bg-black px-2 py-0.5 rounded border border-zinc-800 uppercase">
+                      ${item.catLabel}
+                    </span>
+                    <span class="text-[10px] font-mono text-zinc-400">
+                      ${item.year}
+                    </span>
+                  </div>
+                  <h4 class="text-base font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
+                    ${item.title}
+                  </h4>
+                </div>
+
+                <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                  ${item.description}
+                </p>
+
+                <div class="space-y-3 pt-2 border-t border-zinc-900">
+                  <div class="flex flex-wrap gap-1.5">
+                    ${item.tools.map(tool => `
+                      <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-300 border border-zinc-800/80">
+                        ${tool}
+                      </span>
+                    `).join('')}
+                  </div>
+
+                  <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-[#F97316] text-white hover:text-black font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border border-zinc-800 hover:border-[#F97316] group/btn shadow-md">
+                    <span>ABRIR EN BEHANCE</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          `).join('')}
+        `;
+      }
+
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    }
+
+    // Contact section helper functions
+    function copyContactEmail() {
+      navigator.clipboard.writeText('ilanelallan1106@gmail.com');
+      const btnText = document.getElementById('copy-btn-text');
+      if (btnText) {
+        btnText.innerText = '¡Copiado!';
+        setTimeout(() => { btnText.innerText = 'Copiar'; }, 2500);
+      }
+    }
+
+    function handleContactFormSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit-btn');
+      if (btn) {
+        btn.innerHTML = '<span class="text-emerald-700 font-bold">¡MENSAJE REGISTRADO EXITOSAMENTE!</span>';
+        setTimeout(() => {
+          btn.innerHTML = '<span>ENVIAR MENSAJE A ILAN</span><i data-lucide="send" class="w-3.5 h-3.5"></i>';
+          if (window.lucide) window.lucide.createIcons();
+        }, 3500);
+      }
+    }
+
+    // Initialize Creative Grid on load
+    renderCreativeGrid('ALL');
+  </script>
+</body>
+</html>
