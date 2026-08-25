@@ -1459,7 +1459,7 @@
       const nw = iW * scale;
       const nh = iH * scale;
       const x = (cW - nw) / 2;
-      const yOffset = isMobile ? -(cH * 0.08) : -(cH * 0.05); // Shift UP
+      const yOffset = isMobile ? -(cH * 0.22) : -(cH * 0.05); // Move significantly higher UP on mobile phones
       const y = (cH - nh) / 2 + yOffset;
 
       heroCtx.clearRect(0, 0, cW, cH);
