@@ -97,7 +97,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-32 sm:pt-0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-14 sm:pt-0">
         
         <!-- VERTICAL STACKED EDITORIAL BADGES ON THE LEFT -->
         <div class="flex flex-col items-start gap-2.5 mb-8 max-w-md">
@@ -1454,12 +1454,12 @@
 
       // Cover scaling math with mobile zoom-out adjustment and upward vertical shift
       const isMobile = window.innerWidth < 640;
-      const zoomFactor = isMobile ? 0.60 : 0.88;
+      const zoomFactor = isMobile ? 0.62 : 0.88;
       const scale = Math.max(cW / iW, cH / iH) * zoomFactor;
       const nw = iW * scale;
       const nh = iH * scale;
       const x = (cW - nw) / 2;
-      const yOffset = isMobile ? -(cH * 0.36) : -(cH * 0.05); // Move animation image significantly higher UP on mobile
+      const yOffset = isMobile ? -(cH * 0.14) : -(cH * 0.05); // Balanced vertical position on mobile
       const y = (cH - nh) / 2 + yOffset;
 
       heroCtx.clearRect(0, 0, cW, cH);
