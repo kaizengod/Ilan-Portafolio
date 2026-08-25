@@ -1454,12 +1454,12 @@
 
       // Cover scaling math with mobile zoom-out adjustment and upward vertical shift
       const isMobile = window.innerWidth < 640;
-      const zoomFactor = isMobile ? 0.62 : 0.88;
+      const zoomFactor = isMobile ? 0.50 : 0.88;
       const scale = Math.max(cW / iW, cH / iH) * zoomFactor;
       const nw = iW * scale;
       const nh = iH * scale;
       const x = (cW - nw) / 2;
-      const yOffset = isMobile ? -(cH * 0.14) : -(cH * 0.05); // Balanced vertical position on mobile
+      const yOffset = isMobile ? -(cH * 0.18) : -(cH * 0.05); // Slightly higher up on mobile
       const y = (cH - nh) / 2 + yOffset;
 
       heroCtx.clearRect(0, 0, cW, cH);
