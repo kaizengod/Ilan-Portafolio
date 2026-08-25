@@ -63,21 +63,21 @@
 
   <!-- ULTRA-TRANSPARENT NAVBAR -->
   <!-- TOP NAVIGATION HEADER -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/40 backdrop-blur-xl border-b border-white/10 transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between relative">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 sm:bg-zinc-950/40 backdrop-blur-xl border-b border-white/10 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4 relative">
       
       <!-- Brand Logo (Only ILAN on Left) -->
-      <a href="#hero" class="font-display font-black text-xl sm:text-2xl tracking-tighter text-white hover:text-[#F97316] transition-colors uppercase z-10">
+      <a href="#hero" class="font-display font-black text-xl sm:text-2xl tracking-tighter text-white hover:text-[#F97316] transition-colors uppercase z-20 shrink-0">
         ILAN
       </a>
 
-      <!-- Dead-Centered Floating Nav Links -->
-      <nav class="absolute left-1/2 -translate-x-1/2 flex items-center gap-5 sm:gap-8 text-xs font-mono tracking-wider">
-        <a href="#work" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">PROYECTOS</a>
-        <a href="#methodology" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CÓMO PIENSO</a>
-        <a href="#creative" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CREATIVE WORK</a>
-        <a href="#about" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">SOBRE MÍ</a>
-        <a href="#contact" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase">CONTACTO</a>
+      <!-- Dead-Centered Floating Nav Links (Mobile Scrollable, No Collision) -->
+      <nav class="flex items-center gap-3.5 sm:gap-8 text-[10px] sm:text-xs font-mono tracking-wider overflow-x-auto no-scrollbar whitespace-nowrap py-1 max-w-[calc(100%-5rem)] md:max-w-none md:absolute md:left-1/2 md:-translate-x-1/2">
+        <a href="#work" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase shrink-0">PROYECTOS</a>
+        <a href="#methodology" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase shrink-0">CÓMO PIENSO</a>
+        <a href="#creative" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase shrink-0">CREATIVE WORK</a>
+        <a href="#about" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase shrink-0">SOBRE MÍ</a>
+        <a href="#contact" class="text-zinc-300 hover:text-[#F97316] transition-colors uppercase shrink-0">CONTACTO</a>
       </nav>
 
     </div>
@@ -316,7 +316,7 @@
         <div id="projects-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 pt-2 no-scrollbar focus:outline-none">
 
           <!-- PROJECT 1: BODEGÓN RODRIGUES 2004 -->
-          <article id="project-card-0" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+          <article id="project-card-0" class="w-[84vw] max-w-[340px] sm:max-w-none sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
             
             <!-- Card Background Image (Detrás) -->
             <div class="absolute inset-0 z-0 pointer-events-none">
@@ -325,14 +325,14 @@
               <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center relative z-10">
               
-              <!-- Visual Metrics & Front Image (Delante) -->
-              <div class="lg:col-span-5 order-2 lg:order-1">
+              <!-- Visual Metrics & Front Image (Delante: Top small on mobile) -->
+              <div class="lg:col-span-5 order-1 lg:order-1">
                 <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
                   
                   <!-- Front Image (Delante) -->
-                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                  <div class="relative h-28 sm:h-48 overflow-hidden border-b border-zinc-800">
                     <img src="./projects/bodegon/delante.JPG" alt="Bodegón Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
                   </div>
@@ -374,7 +374,7 @@
               </div>
 
               <!-- Project Details -->
-              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+              <div class="lg:col-span-7 order-2 lg:order-2 space-y-3 sm:space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                   <div class="flex items-center gap-3">
                     <span class="font-mono text-sm font-bold text-[#F97316]">01</span>
@@ -422,7 +422,7 @@
           </article>
 
           <!-- PROJECT 2: ABC POKER -->
-          <article id="project-card-1" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+          <article id="project-card-1" class="w-[84vw] max-w-[340px] sm:max-w-none sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
             
             <!-- Card Background Image (Detrás) -->
             <div class="absolute inset-0 z-0 pointer-events-none">
@@ -431,14 +431,14 @@
               <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center relative z-10">
               
-              <!-- Visual Architecture Graphic & Front Image (Delante) -->
-              <div class="lg:col-span-5 order-2 lg:order-1">
+              <!-- Visual Architecture Graphic & Front Image (Delante: Top small on mobile) -->
+              <div class="lg:col-span-5 order-1 lg:order-1">
                 <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
                   
                   <!-- Front Image (Delante) -->
-                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                  <div class="relative h-28 sm:h-48 overflow-hidden border-b border-zinc-800">
                     <img src="./projects/abc/delante.png" alt="ABC Poker Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
                   </div>
@@ -476,7 +476,7 @@
               </div>
 
               <!-- Project Details -->
-              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+              <div class="lg:col-span-7 order-2 lg:order-2 space-y-3 sm:space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                   <div class="flex items-center gap-3">
                     <span class="font-mono text-sm font-bold text-[#F97316]">02</span>
@@ -524,7 +524,7 @@
           </article>
 
           <!-- PROJECT 3: DASHBOARD DE FINANZAS PERSONALES -->
-          <article id="project-card-2" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+          <article id="project-card-2" class="w-[84vw] max-w-[340px] sm:max-w-none sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
             
             <!-- Card Background Image (Detrás) -->
             <div class="absolute inset-0 z-0 pointer-events-none">
@@ -533,10 +533,10 @@
               <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center relative z-10">
               
               <!-- Tech Stack Graphic -->
-              <div class="lg:col-span-5 order-2 lg:order-1">
+              <div class="lg:col-span-5 order-1 lg:order-1">
                 <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md p-6 space-y-4 shadow-xl">
                   <div class="flex items-center justify-between border-b border-zinc-800/80 pb-3">
                     <span class="text-xs font-mono text-zinc-300 uppercase tracking-wider font-bold flex items-center gap-1.5">
@@ -565,7 +565,7 @@
               </div>
 
               <!-- Project Details -->
-              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+              <div class="lg:col-span-7 order-2 lg:order-2 space-y-3 sm:space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                   <div class="flex items-center gap-3">
                     <span class="font-mono text-sm font-bold text-[#F97316]">03</span>
@@ -613,7 +613,7 @@
           </article>
 
           <!-- PROJECT 4: TESIS PORTER -->
-          <article id="project-card-3" class="w-[90vw] sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
+          <article id="project-card-3" class="w-[84vw] max-w-[340px] sm:max-w-none sm:w-[620px] md:w-[720px] lg:w-[840px] snap-center shrink-0 rounded-3xl border border-zinc-800 bg-zinc-950 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden group">
             
             <!-- Card Background Image (Detrás) -->
             <div class="absolute inset-0 z-0 pointer-events-none">
@@ -622,14 +622,14 @@
               <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"></div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center relative z-10">
               
-              <!-- Visual Strategy Graphic & Front Image (Delante) -->
-              <div class="lg:col-span-5 order-2 lg:order-1">
+              <!-- Visual Strategy Graphic & Front Image (Delante: Top small on mobile) -->
+              <div class="lg:col-span-5 order-1 lg:order-1">
                 <div class="rounded-2xl border border-zinc-800 bg-[#0e0e11]/90 backdrop-blur-md overflow-hidden shadow-xl">
                   
                   <!-- Front Image (Delante: Logo Bodegón) -->
-                  <div class="relative h-44 sm:h-48 overflow-hidden border-b border-zinc-800">
+                  <div class="relative h-28 sm:h-48 overflow-hidden border-b border-zinc-800">
                     <img src="./projects/bodegon/delante.JPG" alt="Bodegón Tesis Logo Feature" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e11] via-transparent to-transparent"></div>
                   </div>
@@ -659,7 +659,7 @@
               </div>
 
               <!-- Project Details -->
-              <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+              <div class="lg:col-span-7 order-2 lg:order-2 space-y-3 sm:space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                   <div class="flex items-center gap-3">
                     <span class="font-mono text-sm font-bold text-[#F97316]">04</span>
@@ -792,8 +792,8 @@
         <!-- Dynamic Semicircle Interactive Dial & Details Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <!-- Left Column: Interactive Semicircle Graphic (Floating on background) -->
-          <div class="lg:col-span-5 flex flex-col items-center justify-center p-2 sm:p-4 relative">
+          <!-- Left Column: Interactive Semicircle Graphic (Below info on mobile, Left on desktop) -->
+          <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col items-center justify-center p-2 sm:p-4 relative">
             <div class="w-full flex items-center justify-between mb-2">
               <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-500">
                 DIAL DE EJECUCIÓN
@@ -885,8 +885,8 @@
             </div>
           </div>
 
-          <!-- Right Column: Active Stage Content (Floating on background) -->
-          <div class="lg:col-span-7">
+          <!-- Right Column: Active Stage Content (Top on mobile, Right on desktop) -->
+          <div class="lg:col-span-7 order-1 lg:order-2">
             <div id="methodology-card-content" class="p-2 sm:p-4 space-y-6">
               <!-- Dynamically Populated by JavaScript -->
             </div>
@@ -950,8 +950,8 @@
           <button onclick="filterCreativeCategory('EXPERIMENTAL')" id="creative-pill-EXPERIMENTAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">3D BLENDER</button>
         </div>
 
-        <!-- Square Cards Visual Gallery Grid -->
-        <div id="creative-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Square Cards Visual Gallery Grid (2-column compact on mobile) -->
+        <div id="creative-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           <!-- Dynamically Rendered by JavaScript -->
         </div>
 
@@ -1117,10 +1117,11 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Skills Matrix Carousel on Mobile / Grid on Desktop -->
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 no-scrollbar md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:pb-0">
             
             <!-- Category 1: NEGOCIOS Y ESTRATEGIA -->
-            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+            <div class="snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 sm:p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
               <div class="space-y-3">
                 <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
                   <i data-lucide="trending-up" class="w-5 h-5"></i>
@@ -1148,7 +1149,7 @@
             </div>
 
             <!-- Category 2: MARKETING DIGITAL -->
-            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+            <div class="snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 sm:p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
               <div class="space-y-3">
                 <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
                   <i data-lucide="target" class="w-5 h-5"></i>
@@ -1176,7 +1177,7 @@
             </div>
 
             <!-- Category 3: TECNOLOGÍA E IA -->
-            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+            <div class="snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 sm:p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
               <div class="space-y-3">
                 <div class="w-10 h-10 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-center justify-center text-[#F97316]">
                   <i data-lucide="sparkles" class="w-5 h-5"></i>
@@ -1204,7 +1205,7 @@
             </div>
 
             <!-- Category 4: CREATIVIDAD Y MEDIOS -->
-            <div class="p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
+            <div class="snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 sm:p-6 rounded-2xl bg-zinc-950/40 backdrop-blur-md border border-zinc-800/80 hover:border-[#F97316]/60 hover:bg-zinc-900/40 transition-all duration-300 flex flex-col justify-between space-y-4 shadow-2xl">
               <div class="space-y-3">
                 <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-[#F97316]">
                   <i data-lucide="palette" class="w-5 h-5"></i>
@@ -1451,13 +1452,14 @@
       const iH = img.naturalHeight || img.height;
       if (!iW || !iH) return;
 
-      // Cover scaling math with slight zoom out and downward vertical shift
-      const zoomFactor = 0.88;
+      // Cover scaling math with mobile zoom-out adjustment and downward vertical shift
+      const isMobile = window.innerWidth < 640;
+      const zoomFactor = isMobile ? 0.62 : 0.88;
       const scale = Math.max(cW / iW, cH / iH) * zoomFactor;
       const nw = iW * scale;
       const nh = iH * scale;
       const x = (cW - nw) / 2;
-      const yOffset = cH * 0.06 + 30; // Shift down
+      const yOffset = isMobile ? cH * 0.02 + 10 : cH * 0.06 + 30; // Shift down
       const y = (cH - nh) / 2 + yOffset;
 
       heroCtx.clearRect(0, 0, cW, cH);
@@ -2042,25 +2044,9 @@
             </span>
           </div>
 
-          <p class="text-sm sm:text-base text-zinc-300 leading-relaxed font-light">
+          <p class="text-xs sm:text-base text-zinc-300 leading-relaxed font-light">
             ${step.description}
           </p>
-
-          <div>
-            <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block mb-2.5">
-              Entregables y Activos Producidos:
-            </span>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              ${step.outputs.map(out => `
-                <div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-zinc-900 border border-zinc-800/90 text-xs font-mono text-zinc-300">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-[#F97316] shrink-0"></i>
-                  <span>${out}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          </div>
         `;
 
         if (window.lucide) {
@@ -2334,31 +2320,31 @@
       // If 'ALL' view -> render the 5 Collection Folder Cards
       if (cat === 'ALL') {
         grid.innerHTML = creativeFoldersData.map(folder => `
-          <div onclick="filterCreativeCategory('${folder.catId}')" class="group cursor-pointer rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-[#F97316] p-6 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-2xl space-y-5 bg-gradient-to-br ${folder.color}">
+          <div onclick="filterCreativeCategory('${folder.catId}')" class="group cursor-pointer rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-[#F97316] p-3 sm:p-6 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-2xl space-y-3 sm:space-y-5 bg-gradient-to-br ${folder.color}">
             
             <div class="flex items-center justify-between">
-              <div class="w-12 h-12 rounded-xl bg-black/90 border border-zinc-800 text-[#F97316] flex items-center justify-center shadow-md group-hover:bg-[#F97316] group-hover:text-black transition-colors">
-                <i data-lucide="${folder.icon}" class="w-6 h-6"></i>
+              <div class="w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-black/90 border border-zinc-800 text-[#F97316] flex items-center justify-center shadow-md group-hover:bg-[#F97316] group-hover:text-black transition-colors">
+                <i data-lucide="${folder.icon}" class="w-4 h-4 sm:w-6 sm:h-6"></i>
               </div>
-              <span class="text-[10px] font-mono font-bold tracking-widest text-zinc-300 bg-black/90 px-3 py-1 rounded-full border border-zinc-800 uppercase shadow-sm">
+              <span class="text-[9px] sm:text-[10px] font-mono font-bold tracking-widest text-zinc-300 bg-black/90 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border border-zinc-800 uppercase shadow-sm">
                 ${folder.count}
               </span>
             </div>
 
             <div>
-              <span class="text-[10px] font-mono text-[#F97316] font-bold tracking-widest uppercase block mb-1">${folder.subtitle}</span>
-              <h3 class="text-xl font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
+              <span class="text-[8px] sm:text-[10px] font-mono text-[#F97316] font-bold tracking-widest uppercase block mb-1">${folder.subtitle}</span>
+              <h3 class="text-xs sm:text-xl font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
                 ${folder.title}
               </h3>
-              <p class="text-xs text-zinc-400 font-light mt-2.5 leading-relaxed">
+              <p class="text-[10px] sm:text-xs text-zinc-400 font-light mt-1 sm:mt-2.5 leading-relaxed line-clamp-2 sm:line-clamp-none">
                 ${folder.description}
               </p>
             </div>
 
-            <div class="pt-4 border-t border-zinc-900/80 flex items-center justify-between">
-              <span class="text-xs font-mono text-zinc-300 font-bold uppercase tracking-wider group-hover:text-[#F97316] transition-colors flex items-center gap-2">
-                <span>ABRIR CARPETA DE TRABAJO</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 text-[#F97316] group-hover:translate-x-1 transition-transform"></i>
+            <div class="pt-2 sm:pt-4 border-t border-zinc-900/80 flex items-center justify-between">
+              <span class="text-[9px] sm:text-xs font-mono text-zinc-300 font-bold uppercase tracking-wider group-hover:text-[#F97316] transition-colors flex items-center gap-1 sm:gap-2">
+                <span>ABRIR CARPETA</span>
+                <i data-lucide="arrow-right" class="w-3 h-3 sm:w-4 sm:h-4 text-[#F97316] group-hover:translate-x-1 transition-transform"></i>
               </span>
             </div>
 
@@ -2370,18 +2356,18 @@
         
         grid.innerHTML = `
           <div class="col-span-full mb-2 flex items-center justify-between flex-wrap gap-3">
-            <button onclick="filterCreativeCategory('ALL')" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 hover:bg-[#F97316] text-zinc-300 hover:text-black font-mono text-xs font-bold uppercase transition-all border border-zinc-800">
-              <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
-              <span>VOLVER A LAS 5 CARPETAS</span>
+            <button onclick="filterCreativeCategory('ALL')" class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-zinc-900 hover:bg-[#F97316] text-zinc-300 hover:text-black font-mono text-[10px] sm:text-xs font-bold uppercase transition-all border border-zinc-800">
+              <i data-lucide="arrow-left" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
+              <span>VOLVER A CARPETAS</span>
             </button>
-            <span class="text-xs font-mono text-zinc-400">Mostrando ${filtered.length} proyectos de esta carpeta</span>
+            <span class="text-[10px] sm:text-xs font-mono text-zinc-400">Mostrando ${filtered.length} proyectos</span>
           </div>
 
           ${filtered.map(item => `
             <div class="group rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-[#F97316]/60 overflow-hidden transition-all duration-300 flex flex-col justify-between hover:-translate-y-1.5 hover:shadow-2xl">
               
               <!-- Live Official Behance Preview Embed Container -->
-              <div class="relative w-full aspect-[4/3] overflow-hidden bg-black border-b border-zinc-800/80">
+              <div class="relative w-full aspect-video sm:aspect-[4/3] overflow-hidden bg-black border-b border-zinc-800/80">
                 <iframe 
                   src="https://www.behance.net/embed/project/${item.behanceId}?ilo0=1" 
                   class="w-full h-full border-0 pointer-events-auto" 
@@ -2394,37 +2380,37 @@
               </div>
 
               <!-- Description & Action Button -->
-              <div class="p-4 space-y-3.5 bg-zinc-950 flex-1 flex flex-col justify-between">
+              <div class="p-2.5 sm:p-4 space-y-2 sm:space-y-3.5 bg-zinc-950 flex-1 flex flex-col justify-between">
                 <div>
-                  <div class="flex items-center justify-between gap-2 mb-1.5">
-                    <span class="text-[10px] font-mono font-bold tracking-widest text-[#F97316] bg-black px-2 py-0.5 rounded border border-zinc-800 uppercase">
+                  <div class="flex items-center justify-between gap-1 mb-1">
+                    <span class="text-[8px] sm:text-[10px] font-mono font-bold tracking-widest text-[#F97316] bg-black px-1.5 py-0.5 rounded border border-zinc-800 uppercase">
                       ${item.catLabel}
                     </span>
-                    <span class="text-[10px] font-mono text-zinc-400">
+                    <span class="text-[8px] sm:text-[10px] font-mono text-zinc-400">
                       ${item.year}
                     </span>
                   </div>
-                  <h4 class="text-base font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
+                  <h4 class="text-xs sm:text-base font-display font-bold text-white group-hover:text-[#F97316] transition-colors leading-snug">
                     ${item.title}
                   </h4>
                 </div>
 
-                <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                <p class="text-[10px] sm:text-xs text-zinc-400 font-light leading-relaxed line-clamp-2 sm:line-clamp-none">
                   ${item.description}
                 </p>
 
-                <div class="space-y-3 pt-2 border-t border-zinc-900">
-                  <div class="flex flex-wrap gap-1.5">
+                <div class="space-y-2 pt-1.5 border-t border-zinc-900">
+                  <div class="flex flex-wrap gap-1">
                     ${item.tools.map(tool => `
-                      <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-300 border border-zinc-800/80">
+                      <span class="px-1.5 py-0.5 rounded bg-zinc-900 text-[8px] sm:text-[10px] font-mono text-zinc-300 border border-zinc-800/80">
                         ${tool}
                       </span>
                     `).join('')}
                   </div>
 
-                  <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-[#F97316] text-white hover:text-black font-mono text-xs font-bold uppercase tracking-wider transition-all duration-200 border border-zinc-800 hover:border-[#F97316] group/btn shadow-md">
-                    <span>ABRIR EN BEHANCE</span>
-                    <i data-lucide="external-link" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
+                  <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-1.5 px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-xl bg-zinc-900 hover:bg-[#F97316] text-white hover:text-black font-mono text-[9px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 border border-zinc-800 hover:border-[#F97316] group/btn shadow-md">
+                    <span>BEHANCE</span>
+                    <i data-lucide="external-link" class="w-3 h-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"></i>
                   </a>
                 </div>
               </div>
