@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp -R index.html public tesis 'scroll animation' projects *.jpg *.JPG *.png src dist/ 2>/dev/null || true"
+    "build": "mkdir -p dist && cp -R index.html public tesis 'scroll animation' projects *.jpg *.JPG *.png *.pdf src dist/ 2>/dev/null || true"
   }
 }
