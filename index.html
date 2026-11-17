@@ -941,12 +941,13 @@
 
         <!-- Category Filter Pills -->
         <div class="flex flex-wrap items-center gap-2 mb-10">
-          <button onclick="filterCreativeCategory('ALL')" id="creative-pill-ALL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-white text-black font-bold shadow-md">TODAS LAS CARPETAS (5)</button>
+          <button onclick="filterCreativeCategory('ALL')" id="creative-pill-ALL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-white text-black font-bold shadow-md">TODAS LAS CARPETAS (6)</button>
           <button onclick="filterCreativeCategory('VIDEO')" id="creative-pill-VIDEO" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">01. VIDEO & PROCESO</button>
           <button onclick="filterCreativeCategory('BODEGON')" id="creative-pill-BODEGON" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">02. BODEGÓN RODRIGUES</button>
           <button onclick="filterCreativeCategory('GASTRONOMIA')" id="creative-pill-GASTRONOMIA" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">03. GASTRONOMÍA & DELIVERY</button>
           <button onclick="filterCreativeCategory('DIGITAL')" id="creative-pill-DIGITAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">04. DIGITAL & WEB</button>
           <button onclick="filterCreativeCategory('POKER')" id="creative-pill-POKER" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">05. POKER & TORNEOS</button>
+          <button onclick="filterCreativeCategory('LEGAL')" id="creative-pill-LEGAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">06. SOLUCIONES LEGALES</button>
           <button onclick="filterCreativeCategory('EXPERIMENTAL')" id="creative-pill-EXPERIMENTAL" class="px-4 py-1.5 rounded-full text-xs font-mono tracking-widest uppercase transition-all bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800">3D BLENDER</button>
         </div>
 
@@ -2080,6 +2081,28 @@
         description: 'Demostración audiovisual de mi metodología de trabajo, producción de contenido y desarrollo de campañas digitales.'
       },
       {
+        id: 'publicidad-mi-arepa-video',
+        behanceId: '258649741',
+        title: 'Publicidad Comercial — Mi Arepa',
+        category: 'VIDEO',
+        catLabel: 'VIDEO & PROCESO',
+        year: '2026',
+        tools: ['DaVinci Resolve', 'CapCut', 'Sound Design'],
+        url: 'https://www.behance.net/gallery/258649741/publicidad-mi-arepa',
+        description: 'Producción audiovisual publicitaria de alto impacto y dinamismo comercial para el sector gastronómico.'
+      },
+      {
+        id: 'vulcan-forge-video',
+        behanceId: '258182115',
+        title: 'Vulcan Forge — Producción Audiovisual & Motion',
+        category: 'VIDEO',
+        catLabel: 'VIDEO & PROCESO',
+        year: '2026',
+        tools: ['After Effects', 'DaVinci Resolve', 'Premiere'],
+        url: 'https://www.behance.net/gallery/258182115/vulcan-forge',
+        description: 'Pieza audiovisual publicitaria y animación de marca con ritmo dinámico, montaje de audio y efectos visuales.'
+      },
+      {
         id: 'bodegon-publicidad-creativa',
         behanceId: '220471579',
         title: 'Bodegón Rodrigues — Publicidad Creativa',
@@ -2234,6 +2257,17 @@
         description: 'Gráfica publicitaria para promociones de horas felices y bonificaciones diarias de fichas.'
       },
       {
+        id: 'soluciones-legales-flyers',
+        behanceId: '258650281',
+        title: 'Publicidad & Campañas — Soluciones Legales',
+        category: 'LEGAL',
+        catLabel: 'LEGAL & CORPORATIVO',
+        year: '2026',
+        tools: ['Photoshop', 'Illustrator', 'Branding'],
+        url: 'https://www.behance.net/gallery/258650281/Publicidad-Soluciones-Legales',
+        description: 'Línea de piezas publicitarias y flyers comerciales para servicios jurídicos, trámites migratorios y asesoría legal corporativa.'
+      },
+      {
         id: '3d-blender-publicidad',
         behanceId: '243994665',
         title: '3D Publicidad & Render Blender',
@@ -2246,15 +2280,15 @@
       }
     ];
 
-    // CREATIVE WORK FOLDERS DATA (5 Main Sections)
+    // CREATIVE WORK FOLDERS DATA (6 Main Sections)
     const creativeFoldersData = [
       {
         catId: 'VIDEO',
         title: '01. Video & Proceso de Trabajo',
         subtitle: 'DEMOSTRACIÓN AUDIOVISUAL & MARKETING',
-        count: '1 PROYECTO',
+        count: '3 PROYECTOS',
         icon: 'video',
-        description: 'Demostración de metodología de trabajo, guiones, producción audiovisual y desarrollo de campañas digitales.',
+        description: 'Demostración de metodología de trabajo, spots publicitarios, guiones, edición y motion graphics.',
         color: 'from-[#F97316]/20 via-zinc-950 to-black'
       },
       {
@@ -2292,6 +2326,15 @@
         icon: 'layers',
         description: 'Artes temáticos Samurai, pases de miembros VIP, torneos dominicales y promociones para mesas de juego.',
         color: 'from-purple-950/30 via-zinc-950 to-black'
+      },
+      {
+        catId: 'LEGAL',
+        title: '06. Soluciones Legales & Corporativo',
+        subtitle: 'PUBLICIDAD, FLYERS & ASESORÍA',
+        count: '1 PROYECTO',
+        icon: 'scale',
+        description: 'Campaña gráfica de alto impacto para servicios jurídicos, gestión migratoria y trámites legales.',
+        color: 'from-blue-950/30 via-zinc-950 to-black'
       }
     ];
 
@@ -2306,7 +2349,7 @@
       const grid = document.getElementById('creative-grid');
       if (!grid) return;
 
-      const categories = ['ALL', 'VIDEO', 'BODEGON', 'GASTRONOMIA', 'DIGITAL', 'POKER', 'EXPERIMENTAL'];
+      const categories = ['ALL', 'VIDEO', 'BODEGON', 'GASTRONOMIA', 'DIGITAL', 'POKER', 'LEGAL', 'EXPERIMENTAL'];
       categories.forEach(c => {
         const pill = document.getElementById(`creative-pill-${c}`);
         if (pill) {
