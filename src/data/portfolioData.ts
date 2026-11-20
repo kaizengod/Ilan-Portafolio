@@ -11,8 +11,8 @@ export const PERSONAL_INFO = {
   philosophy: 'Me interesa transformar problemas de negocio en soluciones digitales, combinando investigación, creatividad, tecnología y medición.',
   profile: 'Profesional en Desarrollo Empresarial orientado a estrategia, marketing digital, investigación y construcción de soluciones digitales.',
   approachSubtitle: 'INVESTIGACIÓN → ESTRATEGIA → CONSTRUCCIÓN → MEDICIÓN → ITERACIÓN',
-  location: 'Venezuela',
-  relocation: 'Disponible para reubicación en Tijuana, México',
+  location: 'Tijuana, Baja California, México',
+  relocation: 'Basado en Tijuana, B.C. • Disponible Presencial / Remoto',
   status: 'Disponible para roles de alto impacto y proyectos digitales',
   languages: [
     { name: 'Español', level: 'Nativo' },
